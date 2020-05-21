@@ -1,6 +1,8 @@
-@import "normalize";
-@import "typography";
+@import "normalize"; // Файл обнуления
 @import "var";
+@import "layout";
+@import "typography";
+
 @import "blocks/navigation";
 @import "blocks/header";
 @import "blocks/reg-info";
@@ -10,3 +12,4 @@
 @import "blocks/qa";
 @import "blocks/form";
 @import "blocks/footer";
+

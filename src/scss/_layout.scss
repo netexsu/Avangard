@@ -1,0 +1,23 @@
+.container {
+	width: 1170px;
+}
+@media screen and (max-width: $ExtraLarge) {
+	.container {
+		width: 960px;
+	}
+}
+@media screen and (max-width: $Large) {
+	.container {
+		width: 720px;
+	}
+}
+@media screen and (max-width: $Medium) {
+	.container {
+		width: 540px;
+	}
+}
+@media screen and (max-width: $Small) {
+	.container {
+		width: calc(100% - 30px);
+	}
+}
