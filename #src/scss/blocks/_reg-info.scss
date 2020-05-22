@@ -1,0 +1,28 @@
+.block-title {
+  text-align: center;
+  margin-top: 117px;
+  &__title {
+    color: rgba(0, 0, 0, 0.7);
+  }
+}
+
+.block-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  &__item {
+    width: calc((100% / 4) - 20px);
+    margin-top: 86px;
+  }
+  &__text {
+    text-align: center;
+    letter-spacing: 0.01em;
+    margin-top: 35px;
+}
+  &__img {
+    width: 75.25px;
+    height: 79.55px;
+    margin: 0 auto;
+    display: block;
+  }
+}
