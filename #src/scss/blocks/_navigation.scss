@@ -1,5 +1,8 @@
 .navigation {
-  background-color: #fff;
+	background-color: #fff;
+	position: fixed;
+	z-index: 3;
+	width: 100%;
   .block-contact {
     padding: 10px 0;
     .wrapper {

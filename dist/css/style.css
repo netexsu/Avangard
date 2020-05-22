@@ -474,6 +474,9 @@ h5 {
 
 .navigation {
   background-color: #fff;
+  position: fixed;
+  z-index: 3;
+  width: 100%;
 }
 
 .navigation .block-contact {
@@ -592,6 +595,9 @@ h5 {
   background: url("/dist/img/header_bg.png");
   background-position: center center;
   background-size: cover;
+  position: relative;
+  top: 134px;
+  z-index: 0;
 }
 
 .header-blocks {

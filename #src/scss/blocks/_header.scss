@@ -2,6 +2,9 @@
 	background: url('/dist/img/header_bg.png');
 	background-position: center center;
 	background-size: cover;
+	position: relative;
+	top: 134px;
+	z-index: 0;
 	&-blocks {
 		display: flex;
 		align-items: flex-end;
