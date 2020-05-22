@@ -119,7 +119,7 @@ template { display: none; }
 
 @media screen and (max-width: 576px) { .container { width: calc(100% - 40px); } }
 
-p, span { font-family: Montserrat; font-style: normal; font-weight: normal; font-size: 16px; line-height: 20px; letter-spacing: 0.04em; }
+* { font-family: Montserrat; font-style: normal; font-weight: normal; font-size: 16px; line-height: 20px; letter-spacing: 0.04em; }
 
 h1 { font-family: Montserrat; font-style: normal; font-weight: bold; font-size: 48px; line-height: 56px; letter-spacing: 0.04em; }
 
@@ -130,6 +130,64 @@ h3 { font-family: Montserrat; font-style: normal; font-weight: 600; font-size: 3
 h4 { font-family: Montserrat; font-style: normal; font-weight: 600; font-size: 24px; line-height: 29px; letter-spacing: 0.08em; }
 
 h5 { font-family: Montserrat; font-style: normal; font-weight: 600; font-size: 18px; line-height: 22px; letter-spacing: 0.02em; }
+
+.btn { border-radius: 100px; text-align: center; }
+
+.btn_red { background: #F93838; box-shadow: 4px 8px 20px rgba(9, 75, 160, 0.4); }
+
+.btn_transp { border: 1px solid #F93838; }
+
+.btn_big { height: 78px; line-height: 78px; }
+
+.btn_small { height: 47px; line-height: 47px; }
+
+.navigation { background-color: #fff; }
+
+.navigation .block-contact { padding: 10px 0; }
+
+.navigation .block-contact .wrapper { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; }
+
+.logo { display: flex; align-items: center; }
+
+.logo__img { margin-right: 10px; }
+
+.logo__title { color: #1663C7; font-weight: 800; }
+
+.logo__subtitle { font-size: 14px; }
+
+.phone { display: flex; flex-wrap: wrap; align-items: flex-start; }
+
+.phone__icon { margin-right: 10px; margin-top: 3px; }
+
+.phone__number { font-size: 14px; }
+
+.callback { display: flex; flex-wrap: wrap; min-width: 290px; justify-content: center; align-items: center; }
+
+.callback__icon { margin-right: 10px; }
+
+.callback__text { font-size: 14px; color: #F93838; }
+
+.block-menu { background-color: #1663C7; padding: 15px 0; }
+
+.menu__links { list-style-type: none; display: flex; flex-wrap: wrap; justify-content: space-between; }
+
+.menu__link a { color: #fff; text-decoration: none; font-size: 14px; text-transform: uppercase; }
+
+.menu__link a:hover { text-decoration: underline; }
+
+.header { background: url("/dist/img/header_bg.png"); background-position: center center; background-size: cover; }
+
+.header-blocks { display: flex; align-items: flex-end; }
+
+.header-blocks__uptitle { text-transform: uppercase; opacity: .9; font-weight: 600; }
+
+.header-blocks__text { margin-top: 117px; margin-bottom: 207px; color: #fff; flex: 1 0 760px; }
+
+.header-blocks__btn { max-width: 378px; letter-spacing: 0.08em; font-weight: 900; font-size: 14px; text-transform: uppercase; margin-top: 60px; }
+
+.header-blocks__police { margin-top: 19px; font-size: 14px; font-weight: bold; max-width: 378px; text-align: center; }
+
+.header-blocks__woman { display: flex; }
 
 .block-title { text-align: center; margin-top: 117px; }
 
