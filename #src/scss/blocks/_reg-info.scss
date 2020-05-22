@@ -1,8 +1,13 @@
 .block-title {
   text-align: center;
-  margin-top: 117px;
+  margin-top: $top2;
   &__title {
     color: rgba(0, 0, 0, 0.7);
+    text-transform: uppercase;
+  }
+  &__sub-title {
+    font-weight: 800;
+    margin-top: 10px;
   }
 }
 
@@ -12,7 +17,7 @@
   justify-content: space-between;
   &__item {
     width: calc((100% / 4) - 20px);
-    margin-top: 86px;
+    margin-top: $top3;
   }
   &__text {
     text-align: center;

@@ -1,0 +1,78 @@
+.block-step {
+  display: flex;
+  justify-content: space-between;
+  margin-top: $top3;
+
+  #reg-step01 {
+    position: relative;
+    align-self: flex-end;
+    &::before {
+      content: '';
+      background: url('/dist/img/reg-step__number1.png');
+      position: absolute;
+      top: -15px;
+      right: 13px;
+      width: 79px;
+      height: 154px;
+    }
+    img {
+      width: 40px;
+      height: 38.22px;
+    }
+  }
+  #reg-step02 {
+    position: relative;
+    align-self: center;
+    &::before {
+      content: '';
+      background: url('/dist/img/reg-step__number2.png');
+      position: absolute;
+      top: -15px;
+      right: -32px;
+      width: 136px;
+      height: 158px;
+    }
+    img {
+      width: 40px;
+      height: 40px;
+    }
+  }
+  #reg-step03 {
+    position: relative;
+    &::before {
+      content: '';
+      background: url('/dist/img/reg-step__number3.png');
+      position: absolute;
+      top: -15px;
+      right: -44px;
+      width: 136px;
+      height: 158px;
+    }
+  }
+
+  &__item {
+    width: calc(100% / 3 - 120px);
+  }
+  &__img {
+    background: #fff;
+    width: 76px;
+    height: 76px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 4px 8px 30px rgba(22, 99, 199, 0.1);
+    border-radius: 30px 0px;
+      img {
+        width: 50px;
+        height: 32.02px;
+      }
+    }
+
+    &__text-title {
+      margin-top: 35px;
+    }
+
+    &__text {
+      margin-top: 10px;
+    }
+  }

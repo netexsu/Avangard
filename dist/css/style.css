@@ -133,7 +133,9 @@ h5 { font-family: Montserrat; font-style: normal; font-weight: 600; font-size: 1
 
 .block-title { text-align: center; margin-top: 117px; }
 
-.block-title__title { color: rgba(0, 0, 0, 0.7); }
+.block-title__title { color: rgba(0, 0, 0, 0.7); text-transform: uppercase; }
+
+.block-title__sub-title { font-weight: 800; margin-top: 10px; }
 
 .block-items { display: flex; flex-wrap: wrap; justify-content: space-between; }
 
@@ -142,5 +144,49 @@ h5 { font-family: Montserrat; font-style: normal; font-weight: 600; font-size: 1
 .block-items__text { text-align: center; letter-spacing: 0.01em; margin-top: 35px; }
 
 .block-items__img { width: 75.25px; height: 79.55px; margin: 0 auto; display: block; }
+
+.block-example { margin-top: 86px; }
+
+.block-example { display: flex; justify-content: space-between; align-items: center; }
+
+.block-example__texts { flex: 0 1 481px; }
+
+.block-example__text-title { margin-top: 25px; margin-bottom: 25px; line-height: 25px; max-width: 417px; }
+
+.block-example__text { line-height: 25px; }
+
+.block-example__text-marker { margin-top: 10px; position: relative; padding-left: 20px; max-width: 385px; }
+
+.block-example__text-marker::before { content: ""; position: absolute; left: 0; top: 6px; width: 8px; height: 8px; border-radius: 50px; background: #1663C7; }
+
+.block-example__img { flex: 0 1 674px; }
+
+.block-step { display: flex; justify-content: space-between; margin-top: 86px; }
+
+.block-step #reg-step01 { position: relative; align-self: flex-end; }
+
+.block-step #reg-step01::before { content: ''; background: url("/dist/img/reg-step__number1.png"); position: absolute; top: -15px; right: 13px; width: 79px; height: 154px; }
+
+.block-step #reg-step01 img { width: 40px; height: 38.22px; }
+
+.block-step #reg-step02 { position: relative; align-self: center; }
+
+.block-step #reg-step02::before { content: ''; background: url("/dist/img/reg-step__number2.png"); position: absolute; top: -15px; right: -32px; width: 136px; height: 158px; }
+
+.block-step #reg-step02 img { width: 40px; height: 40px; }
+
+.block-step #reg-step03 { position: relative; }
+
+.block-step #reg-step03::before { content: ''; background: url("/dist/img/reg-step__number3.png"); position: absolute; top: -15px; right: -44px; width: 136px; height: 158px; }
+
+.block-step__item { width: calc(100% / 3 - 120px); }
+
+.block-step__img { background: #fff; width: 76px; height: 76px; display: flex; justify-content: center; align-items: center; box-shadow: 4px 8px 30px rgba(22, 99, 199, 0.1); border-radius: 30px 0px; }
+
+.block-step__img img { width: 50px; height: 32.02px; }
+
+.block-step__text-title { margin-top: 35px; }
+
+.block-step__text { margin-top: 10px; }
 
 /*# sourceMappingURL=style.css.map */

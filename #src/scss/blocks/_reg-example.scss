@@ -1,0 +1,46 @@
+
+.block-example {
+  margin-top: $top3;
+}
+
+.block-example {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__texts {
+    flex: 0 1 481px;
+  }
+  
+  &__text-title {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    line-height: 25px;
+    max-width: 417px;
+  }
+
+  &__text {
+    line-height: 25px;
+  }
+
+  &__text-marker {
+    margin-top: 10px;
+    position: relative;
+    padding-left: 20px;
+    max-width: 385px;
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 6px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50px;
+      background: #1663C7;
+    }
+  }
+
+  &__img {
+    flex: 0 1 674px;
+  }
+}
