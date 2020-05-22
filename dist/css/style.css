@@ -107,6 +107,8 @@ template { display: none; }
 /** Add the correct display in IE 10. */
 [hidden] { display: none; }
 
+* { margin: 0; padding: 0; }
+
 .container { width: 1170px; margin: 0 auto; }
 
 @media screen and (max-width: 1260px) { .container { width: 960px; } }
@@ -117,7 +119,7 @@ template { display: none; }
 
 @media screen and (max-width: 576px) { .container { width: calc(100% - 40px); } }
 
-* { font-family: Montserrat; font-style: normal; font-weight: normal; font-size: 16px; line-height: 20px; letter-spacing: 0.04em; }
+p, span { font-family: Montserrat; font-style: normal; font-weight: normal; font-size: 16px; line-height: 20px; letter-spacing: 0.04em; }
 
 h1 { font-family: Montserrat; font-style: normal; font-weight: bold; font-size: 48px; line-height: 56px; letter-spacing: 0.04em; }
 
@@ -125,8 +127,20 @@ h2 { font-family: Montserrat; font-style: normal; font-weight: bold; font-size: 
 
 h3 { font-family: Montserrat; font-style: normal; font-weight: 600; font-size: 30px; line-height: 37px; letter-spacing: 0.04em; }
 
-h4 { font-family: Montserrat; font-style: normal; font-weight: 600; font-size: 24px; line-height: 29px; letter-spacing: 0.04em; }
+h4 { font-family: Montserrat; font-style: normal; font-weight: 600; font-size: 24px; line-height: 29px; letter-spacing: 0.08em; }
 
-h5 { font-family: Montserrat; font-style: normal; font-weight: 600; font-size: 18px; line-height: 22px; letter-spacing: 0.04em; }
+h5 { font-family: Montserrat; font-style: normal; font-weight: 600; font-size: 18px; line-height: 22px; letter-spacing: 0.02em; }
+
+.block-title { text-align: center; margin-top: 117px; }
+
+.block-title__title { color: rgba(0, 0, 0, 0.7); }
+
+.block-items { display: flex; flex-wrap: wrap; justify-content: space-between; }
+
+.block-items__item { width: calc((100% / 4) - 20px); margin-top: 86px; }
+
+.block-items__text { text-align: center; letter-spacing: 0.01em; margin-top: 35px; }
+
+.block-items__img { width: 75.25px; height: 79.55px; margin: 0 auto; display: block; }
 
 /*# sourceMappingURL=style.css.map */
