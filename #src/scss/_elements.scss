@@ -1,0 +1,24 @@
+// Кнопки на сайта
+.btn {
+		border-radius: 100px;
+		text-align: center;
+		// Красная кнопка
+	&_red { 
+		background: $colorRed;
+		box-shadow: 4px 8px 20px rgba(9, 75, 160, 0.4);
+	}
+	// Прозрачная кнопка
+	&_transp {
+		border: 1px solid $colorRed;
+	}
+	// Большой размер кнопки
+	&_big {
+		height: 78px;
+		line-height: 78px;
+	}
+	// Маленький размер кнопки
+	&_small {
+		height: 47px;
+		line-height: 47px;
+	}
+}

@@ -1,0 +1,80 @@
+.navigation {
+  background-color: #fff;
+  .block-contact {
+    padding: 10px 0;
+    .wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}
+
+// Долотип
+.logo {
+  display: flex;
+  align-items: center;
+  &__img {
+    margin-right: 10px;
+  }
+  &__title {
+    color: $colorBlue;
+    font-weight: 800;
+  }
+  &__subtitle {
+    font-size: 14px;
+  }
+}
+// Номера телефонов
+.phone {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  &__icon {
+    margin-right: 10px;
+    margin-top: 3px;
+  }
+  &__number {
+    font-size: 14px;
+  }
+}
+// Кнопка
+.callback {
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 290px;
+  justify-content: center;
+  align-items: center;
+  &__icon {
+    margin-right: 10px;
+  }
+  &__text {
+    font-size: 14px;
+    color: $colorRed;
+  }
+}
+// меню
+.block-menu {
+  background-color: $colorBlue;
+  padding: 15px 0;
+}
+.menu {
+  &__links {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  &__link {
+    a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 14px;
+      text-transform: uppercase;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
