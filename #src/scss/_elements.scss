@@ -1,42 +1,57 @@
+// Логотип сайта
+.logo {
+  display: flex;
+  align-items: center;
+  &__img {
+    margin-right: 10px;
+  }
+  &__title {
+    color: $colorBlue;
+    font-weight: 800;
+  }
+  &__subtitle {
+    font-size: 14px;
+  }
+}
 // Кнопки на сайта
 .btn {
-		border-radius: 100px;
-		text-align: center;
-		// Красная кнопка
-	&_red { 
-		background: $colorRed;
-		box-shadow: 4px 8px 20px rgba(9, 75, 160, 0.4);
-	}
-	// Прозрачная кнопка
-	&_transp {
-		border: 1px solid $colorRed;
-	}
-	// Большой размер кнопки
-	&_big {
-		height: 78px;
-		line-height: 78px;
-	}
-	// Маленький размер кнопки
-	&_small {
-		height: 47px;
-		line-height: 47px;
-	}
+  border-radius: 100px;
+  text-align: center;
+  // Красная кнопка
+  &_red {
+    background: $colorRed;
+    box-shadow: 4px 8px 20px rgba(9, 75, 160, 0.4);
+  }
+  // Прозрачная кнопка
+  &_transp {
+    border: 1px solid $colorRed;
+  }
+  // Большой размер кнопки
+  &_big {
+    height: 78px;
+    line-height: 78px;
+  }
+  // Маленький размер кнопки
+  &_small {
+    height: 47px;
+    line-height: 47px;
+  }
 }
 
 // Стилизация заголовков блоков
 .block-title {
   text-align: center;
-	margin: $top2 auto 0 auto;
-	
+  margin: $top2 auto 0 auto;
+
   &__title {
-    opacity: .7;
+    opacity: 0.7;
     text-transform: uppercase;
   }
   &__sub-title {
     font-weight: 800;
     margin-top: 10px;
-	}
-	&_white {
-		color: #FFFFFF;
-	}
+  }
+  &_white {
+    color: #ffffff;
+  }
 }
