@@ -11,21 +11,6 @@
   }
 }
 
-// Долотип
-.logo {
-  display: flex;
-  align-items: center;
-  &__img {
-    margin-right: 10px;
-  }
-  &__title {
-    color: $colorBlue;
-    font-weight: 800;
-  }
-  &__subtitle {
-    font-size: 14px;
-  }
-}
 // Номера телефонов
 .phone {
   display: flex;
