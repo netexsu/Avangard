@@ -141,6 +141,14 @@ h5 { font-family: Montserrat; font-style: normal; font-weight: 600; font-size: 1
 
 .btn_small { height: 47px; line-height: 47px; }
 
+.block-title { text-align: center; margin: 117px auto 0 auto; }
+
+.block-title__title { opacity: .7; text-transform: uppercase; }
+
+.block-title__sub-title { font-weight: 800; margin-top: 10px; }
+
+.block-title_white { color: #FFFFFF; }
+
 .navigation { background-color: #fff; }
 
 .navigation .block-contact { padding: 10px 0; }
@@ -189,12 +197,6 @@ h5 { font-family: Montserrat; font-style: normal; font-weight: 600; font-size: 1
 
 .header-blocks__woman { display: flex; }
 
-.block-title { text-align: center; margin-top: 117px; }
-
-.block-title__title { color: rgba(0, 0, 0, 0.7); text-transform: uppercase; }
-
-.block-title__sub-title { font-weight: 800; margin-top: 10px; }
-
 .block-items { display: flex; flex-wrap: wrap; justify-content: space-between; }
 
 .block-items__item { width: calc((100% / 4) - 20px); margin-top: 86px; }
@@ -205,7 +207,7 @@ h5 { font-family: Montserrat; font-style: normal; font-weight: 600; font-size: 1
 
 .block-example { margin-top: 86px; }
 
-.block-example { display: flex; justify-content: space-between; align-items: center; }
+.block-example { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
 
 .block-example__texts { flex: 0 1 481px; }
 
@@ -246,5 +248,25 @@ h5 { font-family: Montserrat; font-style: normal; font-weight: 600; font-size: 1
 .block-step__text-title { margin-top: 35px; }
 
 .block-step__text { margin-top: 10px; }
+
+.about { background-image: url(/dist/img/about-background.svg); background-size: cover; padding-top: 1px; margin-top: 207px; }
+
+.about .block-title { max-width: 570px; }
+
+.block-about { display: flex; justify-content: space-between; flex-wrap: wrap; margin-top: 86px; padding-bottom: 117px; }
+
+.block-about__item { width: calc(100% / 2 - 60px); }
+
+.block-about__text-history { margin-bottom: 30px; letter-spacing: 0.02em; line-height: 24px; color: rgba(255, 255, 255, 0.9); }
+
+.block-about__text-title { color: #1663C7; max-width: 417px; }
+
+.block-about__text-subtitle { font-weight: 600; line-height: 25px; letter-spacing: 0.02em; max-width: 385px; margin-top: 25px; }
+
+.block-about__text-marker { margin-top: 20px; position: relative; padding-left: 20px; }
+
+.block-about__text-marker::before { content: ""; position: absolute; left: 0; top: 6px; width: 8px; height: 8px; border-radius: 50px; background: #1663C7; }
+
+.about-white { background: #FFFFFF; border-radius: 90px 0px; padding: 49px; }
 
 /*# sourceMappingURL=style.css.map */
