@@ -51,7 +51,7 @@
   padding: 15px 0;
 }
 .menu {
-  .phone {
+  .phone-menu {
     display: none;
   }
   .btn-menu {
@@ -97,33 +97,34 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-		align-items: center;
-		
+    align-items: center;
+
     .phone-menu {
       display: block;
       color: #fff;
       &__number {
         font-size: 12px;
-			}
-			
+      }
     }
     .btn-menu {
       display: flex;
     }
     &__humburgers:checked + &__links {
       max-height: 100vh;
-		}
-		&__links {
-			flex-direction: column;
-			width: 100%;
-			max-height: 0;
-			overflow: hidden;
-			transition: .5s all;
-		}
-		&__link {
-			width: 100%;
-			margin-top: 30px;
-		}
-
+    }
+    &__links {
+      flex-direction: column;
+      width: 100%;
+      max-height: 0;
+      overflow: hidden;
+      transition: 0.5s all;
+    }
+    &__link {
+      width: 100%;
+      margin-top: 30px;
+    }
+  }
+  .phone {
+    display: none;
   }
 }
