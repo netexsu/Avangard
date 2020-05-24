@@ -20,3 +20,10 @@
   }
 }
 
+@media screen and (max-width: $Large) {
+  .block-items__item {
+    width: 0;
+    flex: 1 0 30%;
+
+  }
+}

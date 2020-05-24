@@ -83,3 +83,12 @@
     width: calc(100% / 3 - 100px);
   }
 }
+
+@media screen and (max-width: $Large) {
+  .block-step__item {
+    width: calc(100% / 3 - 45px);
+  }
+  .block-step__text {
+    font-size: 14px;
+  }
+}
