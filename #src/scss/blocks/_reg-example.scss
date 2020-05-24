@@ -66,3 +66,13 @@
     margin-top: 20px;
   }
 }
+
+@media screen and (max-width: $Medium) {
+  .block-example__texts {
+    padding: 0 80px;
+  }
+ 
+  .block-example__text-marker {
+    flex: 0 1 350px;
+  }
+}
