@@ -7,15 +7,14 @@
     display: none;
   }
   &__block {
-		height: 90px;
-		margin-top: 30px; 
+    margin-top: 30px;
     background: #ffffff;
     box-shadow: 4px 8px 30px rgba(22, 99, 199, 0.16);
     border-radius: 10px;
     cursor: pointer;
     display: flex;
     align-items: center;
-    padding: 0 100px;
+    padding: 1px 100px;
     position: relative;
     &::before {
       content: "";
@@ -39,29 +38,27 @@
       top: 50%;
       transform: translatey(-50%);
     }
-	}
-	  &__content {
-			padding: 0 100px;
-			max-height: 0;
-			overflow: hidden;
-			transition: all .5s linear;
   }
-	&__input:checked + &__content {
-			max-height: 100vh;
-			padding: 55px 100px;
-	}
-	&__input:checked + &__block::after {
-		content: "";
-		background: url("/dist/img/qa__up.svg");
-		background-repeat: no-repeat;
-		background-position: center center;
-		width: 38px;
-		height: 38px;
-		position: absolute;
-		right: 25px;
-		top: 50%;
-		transform: translatey(-50%);
+  &__content {
+    padding: 0 100px;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s linear;
+  }
+  &__input:checked + &__content {
+    max-height: 100vh;
+    padding: 55px 100px;
+  }
+  &__input:checked + &__block::after {
+    content: "";
+    background: url("/dist/img/qa__up.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 38px;
+    height: 38px;
+    position: absolute;
+    right: 25px;
+    top: 50%;
+    transform: translatey(-50%);
+  }
 }
-
-
-  }
