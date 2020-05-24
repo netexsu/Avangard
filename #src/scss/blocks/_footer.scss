@@ -9,7 +9,6 @@
   justify-content: space-between;
   flex-wrap: wrap;
 
-
   &__item {
     width: 320px;
   }
@@ -55,7 +54,6 @@
   }
 
   &__phone {
-    // display: flex;
     flex-direction: column;
   }
 
@@ -82,7 +80,6 @@
 
   &__online-application {
     margin-top: 10px;
-    // font-weight: normal;
     font-size: 12px;
     line-height: 20px;
     letter-spacing: 0.02em;
