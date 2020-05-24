@@ -1,16 +1,13 @@
 
 .block-example {
-  margin-top: $top3;
-}
-
-.block-example {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  margin-top: $top3;
 
   &__texts {
-    flex: 0 1 481px;
+    width: calc(100% / 12 * 5 - 20px);
   }
   
   &__text-title {
@@ -42,6 +39,30 @@
   }
 
   &__img {
-    flex: 0 1 674px;
+    width: calc(100% / 12 * 7 - 20px);
+  }
+}
+
+@media screen and (max-width: $Large) {
+  .block-example__texts {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+
+  }
+
+  .block-example__text-title  {
+    max-width: 100%;
+  }
+  .block-example__text-marker {
+    max-width: 100%;
+    display: block;
+    flex: 1 0 250px;
+    
+  }
+  .block-example__img {
+    width: 100%;
+    margin-top: 20px;
   }
 }

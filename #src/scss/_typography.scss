@@ -47,3 +47,35 @@ h5 {
   line-height: 22px;
   letter-spacing: 0.02em;
 }
+
+@media screen and (max-width: $Large) {
+  * {
+
+    font-size: 14px;
+    
+  }
+  h1 {
+ 
+    font-size: 44px;
+    
+  }
+  h2 {
+
+    font-size: 36px;
+    
+  }
+  h3 {
+    font-size: 30px;
+    
+  }
+  h4 {
+    
+    font-size: 24px;
+    
+  }
+  h5 {
+
+    font-size: 16px;
+   
+  }
+}

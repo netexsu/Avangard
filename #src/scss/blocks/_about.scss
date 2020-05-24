@@ -62,3 +62,12 @@
   padding: 49px;
 }
 
+@media screen and (max-width: $Large) {
+  .block-about__item {
+    width: 100%;
+  }
+
+  .block-about__text-title,.block-about__text-subtitle {
+    max-width: 100%;
+  }
+}

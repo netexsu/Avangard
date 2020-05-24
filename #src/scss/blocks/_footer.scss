@@ -10,7 +10,8 @@
   flex-wrap: wrap;
 
   &__item {
-    width: 320px;
+    // min-width: 320px;
+    width: calc(100% / 3 - 40px);
   }
 
   &__logo{
@@ -84,8 +85,6 @@
     line-height: 20px;
     letter-spacing: 0.02em;
     color: rgba(255, 255, 255, 0.7);
-    text-align: center;
+    // text-align: center;
   }
 }
-
-
