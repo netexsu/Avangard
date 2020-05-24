@@ -19,9 +19,11 @@
 
 // Номера телефонов
 .phone {
+  margin-left: auto;
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-start;
+	align-items: flex-start;
+	margin-right: 15px;
   &__icon {
     margin-right: 10px;
     margin-top: 3px;
@@ -51,6 +53,7 @@
   padding: 15px 0;
 }
 .menu {
+  padding: 3px 0;
   .phone-menu {
     display: none;
   }
