@@ -11,7 +11,7 @@
 
   &__item {
     // min-width: 320px;
-    width: calc(100% / 3 - 40px);
+    width: calc(100% / 3 - 0px);
   }
 
   &__logo{
@@ -40,6 +40,7 @@
   &__links {
     display: flex;
     flex-direction: column;
+    list-style-type: none;
   }
 
   &__link {
@@ -73,6 +74,7 @@
   &_transp {
     margin-top: 70px;
     border: 1px solid #ffffff;
+    max-width: 290px;
   }
 
   &__text-application {
@@ -86,5 +88,24 @@
     letter-spacing: 0.02em;
     color: rgba(255, 255, 255, 0.7);
     // text-align: center;
+  }
+}
+
+
+
+@media screen and (max-width: $Large) {
+ 
+}
+
+@media screen and (max-width: $Medium) {
+  .block-footer {
+    flex-wrap: nowrap;
+  }
+  .block-footer__item {
+    width: calc(100% / 2 - 20px);
+  }
+
+  #block-footer__item2 {
+    display: none;
   }
 }
