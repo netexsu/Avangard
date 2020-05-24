@@ -187,13 +187,13 @@ h5 { font-family: Montserrat; font-style: normal; font-weight: 600; font-size: 1
 
 .menu__link a:hover { text-decoration: underline; }
 
-body { padding-top: 134px; }
+body { padding-top: 134px; overflow: hidden; }
 
 .header { background: url("/dist/img/header_bg.png"); background-position: center center; background-size: cover; }
 
 .header-blocks { display: flex; align-items: flex-end; }
 
-.header-blocks__uptitle { text-transform: uppercase; opacity: .9; font-weight: 600; }
+.header-blocks__uptitle { text-transform: uppercase; opacity: 0.9; font-weight: 600; }
 
 .header-blocks__text { margin-top: 117px; margin-bottom: 207px; color: #fff; flex: 1 0 760px; }
 
@@ -291,7 +291,7 @@ body { padding-top: 134px; }
 
 .accordeon__input:checked + .accordeon__block::after { content: ""; background: url("/dist/img/qa__up.svg"); background-repeat: no-repeat; background-position: center center; width: 38px; height: 38px; position: absolute; right: 25px; top: 50%; transform: translatey(-50%); }
 
-.form { background-image: url("/dist/img/form__bg.png"); padding-top: 1px; margin-top: 207px; padding-bottom: 86px; }
+.form { background-image: url("/dist/img/form__bg.png"); background-size: cover; padding-top: 1px; margin-top: 207px; padding-bottom: 86px; }
 
 .block-form { max-width: 696px; margin: 0 auto; margin-top: 86px; }
 
