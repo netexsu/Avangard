@@ -301,4 +301,38 @@ body { padding-top: 134px; overflow-x: hidden; }
 
 .block-form__police { font-size: 12px; line-height: 28px; letter-spacing: 0.02em; color: #ffffff70; text-align: center; }
 
+.footer { background: #021124; padding-top: 30px; padding-bottom: 40px; }
+
+.block-footer { display: flex; justify-content: space-between; flex-wrap: wrap; }
+
+.block-footer__item { width: 320px; }
+
+.block-footer__logo { color: #fff; }
+
+.block-footer__text-info { color: rgba(255, 255, 255, 0.4); font-size: 12px; margin-top: 17px; }
+
+.block-footer__text-ogrn { color: rgba(255, 255, 255, 0.4); font-size: 12px; margin-top: 26px; }
+
+.block-footer__text-copyright { color: rgba(255, 255, 255, 0.4); font-size: 12px; line-height: 16px; margin-top: 10px; }
+
+.block-footer__links { display: flex; flex-direction: column; }
+
+.block-footer__link { margin-top: 10px; }
+
+.block-footer__link a { font-weight: 500; text-transform: none; font-size: 12px; line-height: 15px; letter-spacing: 0.04em; color: rgba(255, 255, 255, 0.7); }
+
+.block-footer__phone { flex-direction: column; }
+
+.block-footer__phone-icon-text { display: flex; }
+
+.block-footer__phone-text { color: rgba(255, 255, 255, 0.9); }
+
+.block-footer__phone-number { color: rgba(255, 255, 255, 0.9); }
+
+.block-footer_transp { margin-top: 70px; border: 1px solid #ffffff; }
+
+.block-footer__text-application { color: #FFFFFF; }
+
+.block-footer__online-application { margin-top: 10px; font-size: 12px; line-height: 20px; letter-spacing: 0.02em; color: rgba(255, 255, 255, 0.7); text-align: center; }
+
 /*# sourceMappingURL=style.css.map */
