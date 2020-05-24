@@ -20,3 +20,9 @@
     display: block;
   }
 }
+
+@media screen and (max-width: $Medium) {
+  .block-items__item {
+    width: calc((100% / 2) - 20px);
+  }
+}
