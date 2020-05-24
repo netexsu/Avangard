@@ -10,7 +10,8 @@
   flex-wrap: wrap;
 
   &__item {
-    width: 320px;
+    // min-width: 320px;
+    width: calc(100% / 3 - 40px);
   }
 
   &__logo{
