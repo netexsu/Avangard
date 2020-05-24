@@ -193,9 +193,9 @@ body { padding-top: 134px; overflow-x: hidden; }
 
 .header-blocks { display: flex; align-items: flex-end; }
 
-.header-blocks__uptitle { text-transform: uppercase; opacity: 0.9; font-weight: 600; }
-
 .header-blocks__text { margin-top: 117px; margin-bottom: 207px; color: #fff; flex: 1 0 760px; }
+
+.header-blocks__uptitle { text-transform: uppercase; opacity: 0.9; font-weight: 600; }
 
 .header-blocks__btn { max-width: 378px; letter-spacing: 0.08em; font-weight: 900; font-size: 14px; text-transform: uppercase; margin-top: 60px; }
 
