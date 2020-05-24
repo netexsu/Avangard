@@ -41,3 +41,8 @@ body {
     }
   }
 }
+@media screen and (max-width: $Large) {
+  .header-blocks__woman {
+    display: none;
+  }
+}
