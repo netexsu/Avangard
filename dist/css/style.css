@@ -206,7 +206,7 @@ h5 { font-family: Montserrat; font-style: normal; font-weight: 600; font-size: 1
 
 @media screen and (max-width: 992px) { .menu { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; }
 		.menu .phone-menu { display: block; color: #fff; }
-		.menu .phone-menu__number { font-size: 12px; }
+		.menu .phone-menu__number { font-size: 14px; }
 		.menu .btn-menu { display: flex; }
 		.menu__humburgers:checked + .menu__links { max-height: 100vh; }
 		.menu__links { flex-direction: column; width: 100%; max-height: 0; overflow: hidden; transition: 0.5s all; }
