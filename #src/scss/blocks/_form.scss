@@ -1,0 +1,23 @@
+.form {
+	background-image: url('/dist/img/form__bg.png');
+	padding-top: 1px;
+	margin-top: $top1;
+	padding-bottom: $top3;
+}
+.block-form {
+	max-width: 696px;
+	margin: 0 auto;
+	margin-top: $top3;
+	&__input {
+		width: 100%;
+		height: 78px;
+		border-radius: 10px;
+		margin-bottom: 20px;
+		padding: 0 25px;
+		border: 0 !important;
+
+	}
+	&__btn {
+		width: 100%;
+	}
+}
