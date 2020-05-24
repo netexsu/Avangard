@@ -172,7 +172,7 @@ h5 { font-family: Montserrat; font-style: normal; font-weight: 600; font-size: 1
 
 .navigation .block-contact { padding: 10px 0; }
 
-.navigation .block-contact .wrapper { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; }
+.navigation .block-contact .wrapper { display: flex; justify-content: space-between; align-items: center; }
 
 .phone { margin-left: auto; display: flex; flex-wrap: wrap; align-items: flex-start; margin-right: 15px; }
 
