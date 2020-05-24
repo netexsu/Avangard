@@ -9,18 +9,18 @@ body {
   &-blocks {
     display: flex;
     align-items: flex-end;
-
-    &__uptitle {
-      text-transform: uppercase;
-      opacity: 0.9;
-      font-weight: 600;
-    }
     &__text {
       margin-top: $top2;
       margin-bottom: $top1;
       color: #fff;
       flex: 1 0 760px;
     }
+    &__uptitle {
+      text-transform: uppercase;
+      opacity: 0.9;
+      font-weight: 600;
+    }
+
     &__btn {
       max-width: 378px;
       letter-spacing: 0.08em;
