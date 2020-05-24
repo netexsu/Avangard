@@ -124,7 +124,9 @@
       margin-top: 30px;
     }
   }
-  .phone {
-    display: none;
+  .navigation {
+    & .phone {
+      display: none;
+    }
   }
 }
