@@ -63,3 +63,8 @@
     color: #ffffff;
   }
 }
+@media screen and (max-width: $Small) {
+  .hidden__callback {
+    display: none;
+  }
+}
