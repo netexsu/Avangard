@@ -243,6 +243,8 @@ body { padding-top: 134px; overflow-x: hidden; }
 
 @media screen and (max-width: 768px) { .block-items__item { flex: 1 0 200px; } }
 
+@media screen and (max-width: 576px) { .block-items__item { flex: 1 1 200px; } }
+
 .block-example { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; margin-top: 86px; }
 
 .block-example__texts { width: calc(100% / 12 * 5 - 20px); }

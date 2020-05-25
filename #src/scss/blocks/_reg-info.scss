@@ -25,12 +25,17 @@
 @media screen and (max-width: $Large) {
   .block-items__item {
     flex: 1 0 200px;
-   
   }
 }
 
 @media screen and (max-width: $Medium) {
   .block-items__item {
     flex: 1 0 200px;
+  }
+}
+
+@media screen and (max-width: $Small) {
+  .block-items__item {
+    flex: 1 1 200px;
   }
 }
