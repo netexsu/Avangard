@@ -8,8 +8,8 @@
     position: relative;
     align-self: flex-end;
     &::before {
-      content: '';
-      background: url('/dist/img/reg-step__number1.png');
+      content: "";
+      background: url("/dist/img/reg-step__number1.png");
       position: absolute;
       top: -15px;
       right: 13px;
@@ -25,8 +25,8 @@
     position: relative;
     align-self: center;
     &::before {
-      content: '';
-      background: url('/dist/img/reg-step__number2.png');
+      content: "";
+      background: url("/dist/img/reg-step__number2.png");
       position: absolute;
       top: -15px;
       right: -32px;
@@ -41,8 +41,8 @@
   #reg-step03 {
     position: relative;
     &::before {
-      content: '';
-      background: url('/dist/img/reg-step__number3.png');
+      content: "";
+      background: url("/dist/img/reg-step__number3.png");
       position: absolute;
       top: -15px;
       right: -44px;
@@ -63,20 +63,20 @@
     align-items: center;
     box-shadow: 4px 8px 30px rgba(22, 99, 199, 0.1);
     border-radius: 30px 0px;
-      img {
-        width: 50px;
-        height: 32.02px;
-      }
-    }
-
-    &__text-title {
-      margin-top: 35px;
-    }
-
-    &__text {
-      margin-top: -20px;
+    img {
+      width: 50px;
+      height: 32.02px;
     }
   }
+
+  &__text-title {
+    margin-top: 35px;
+  }
+
+  &__text {
+    margin-top: -20px;
+  }
+}
 
 @media screen and (max-width: $ExtraLarge) {
   .block-step__item {
@@ -103,5 +103,19 @@
   .block-step__item {
     width: 100%;
     margin-top: 20px;
+  }
+}
+@media screen and (max-width: $Small) {
+  .block-step {
+    justify-content: flex-start;
+    #reg-step01,
+    #reg-step02,
+    #reg-step03 {
+      align-self: flex-start;
+    }
+  }
+
+  .block-step__item {
+    width: 80%;
   }
 }
