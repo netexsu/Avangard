@@ -36,7 +36,9 @@
 .callback {
   display: flex;
   flex-wrap: wrap;
-  min-width: 290px;
+  width: 300px;
+
+  padding: 0 20px;
   justify-content: center;
   align-items: center;
   &__icon {
@@ -131,5 +133,11 @@
     & .phone {
       display: none;
     }
+  }
+}
+@media screen and (max-width: $Small) {
+  .callback {
+    width: 200px;
+    min-width: 200px;
   }
 }
