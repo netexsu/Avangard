@@ -105,3 +105,18 @@
     margin-top: 20px;
   }
 }
+
+@media screen and (max-width: $Small) {
+  .block-step {
+    justify-content: flex-start;
+    #reg-step01, #reg-step02, #reg-step03 {
+      align-self: flex-start;
+      
+    }
+  }
+
+  .block-step__item {
+    width: 80%;
+  }
+ 
+}
