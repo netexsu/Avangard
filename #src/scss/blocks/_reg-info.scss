@@ -34,5 +34,9 @@
 @media screen and (max-width: $Small) {
   .block-items__item {
     width: 45%;
+    margin-top: 30px;
+  }
+  .block-items__text {
+    margin-top: 15px;
   }
 }

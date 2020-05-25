@@ -19,6 +19,7 @@
     &::before {
       content: "";
       background: url("/dist/img/qa__question.svg");
+      background-size: cover;
       width: 38px;
       height: 38px;
       position: absolute;
@@ -31,6 +32,7 @@
       background: url("/dist/img/qa__down.svg");
       background-repeat: no-repeat;
       background-position: center center;
+      background-size: contain;
       width: 38px;
       height: 38px;
       position: absolute;
@@ -60,5 +62,34 @@
     right: 25px;
     top: 50%;
     transform: translatey(-50%);
+  }
+}
+
+
+@media screen and (max-width: $Small) {
+  .block-qa {
+    margin: 40px auto 0;
+  }
+
+
+  .accordeon__block {
+    padding: 0 60px;
+    &::before {
+      width: 28px;
+      height: 28px;
+      left: 15px;
+    }
+    &::after {
+      width: 28px;
+      height: 28px;
+      right: 15px;
+    }
+  }
+
+  .accordeon {
+    &__input:checked + &__content {
+      max-height: 100vh;
+      padding: 35px 40px;
+    }
   }
 }

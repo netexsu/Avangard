@@ -28,3 +28,17 @@
     text-align: center;
   }
 }
+
+
+@media screen and (max-width: $Small) {
+  .form {
+    margin-top: 70px;
+  }
+
+  .block-form {
+    margin-top: 40px;
+  }
+  .block-form__input {
+    height: 60px;
+  }
+}

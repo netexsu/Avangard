@@ -48,3 +48,11 @@ body {
     flex: 1 1 760px;
   }
 }
+
+@media screen and (max-width: $Small) {
+  
+.header-blocks__text {
+    margin-top: 58px;
+    margin-bottom: 58px;
+  }
+}
