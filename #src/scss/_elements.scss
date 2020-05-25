@@ -63,3 +63,17 @@
     color: #ffffff;
   }
 }
+@media screen and (max-width: $Small) {
+  .hidden__callback {
+    display: none;
+  }
+
+  .block-title {
+    margin: 58px auto 0 auto;
+  }
+
+  .btn_big {
+    height: 60px;
+    line-height: 60px;
+  }
+}

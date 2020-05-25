@@ -1,7 +1,7 @@
 body {
   padding-top: 134px;
-	overflow-x: hidden;
-	scroll-behavior: smooth;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 .header {
   background: url("/dist/img/header_bg.png");
@@ -14,7 +14,7 @@ body {
       margin-top: $top2;
       margin-bottom: $top1;
       color: #fff;
-      flex: 0 1 745px;
+      flex: 0 0 760px;
     }
     &__uptitle {
       text-transform: uppercase;
@@ -46,5 +46,13 @@ body {
 @media screen and (max-width: $Medium) {
   .header-blocks__text {
     flex: 1 1 760px;
+  }
+}
+
+@media screen and (max-width: $Small) {
+  
+.header-blocks__text {
+    margin-top: 58px;
+    margin-bottom: 58px;
   }
 }

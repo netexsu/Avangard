@@ -1,4 +1,3 @@
-
 .block-example {
   display: flex;
   justify-content: space-between;
@@ -9,7 +8,7 @@
   &__texts {
     width: calc(100% / 12 * 5 - 20px);
   }
-  
+
   &__text-title {
     margin-top: 25px;
     margin-bottom: 25px;
@@ -34,7 +33,7 @@
       width: 8px;
       height: 8px;
       border-radius: 50px;
-      background: #1663C7;
+      background: #1663c7;
     }
   }
 
@@ -48,18 +47,15 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-
-
   }
 
-  .block-example__text-title  {
+  .block-example__text-title {
     max-width: 100%;
   }
   .block-example__text-marker {
     max-width: 100%;
     display: block;
     flex: 1 0 250px;
-    
   }
   .block-example__img {
     width: 100%;
@@ -71,8 +67,17 @@
   .block-example__texts {
     padding: 0 80px;
   }
- 
+
   .block-example__text-marker {
     flex: 0 1 350px;
+  }
+}
+@media screen and (max-width: $Small) {
+  .block-example {
+    margin-top: 40px;
+  }
+  
+  .block-example__texts {
+    padding: 0;
   }
 }
