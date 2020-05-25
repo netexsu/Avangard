@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   margin-top: $top3;
+  height: 320px;
 
   #reg-step01 {
     position: relative;
@@ -51,7 +52,7 @@
   }
 
   &__item {
-    width: calc(100% / 3 - 120px);
+    width: calc(100% / 3 - 100px);
   }
   &__img {
     background: #fff;
@@ -76,3 +77,34 @@
       margin-top: -20px;
     }
   }
+
+@media screen and (max-width: $ExtraLarge) {
+  .block-step__item {
+    width: calc(100% / 3 - 100px);
+  }
+}
+
+@media screen and (max-width: $Large) {
+  .block-step__item {
+    width: calc(100% / 3 - 45px);
+  }
+  .block-step__text {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: $Medium) {
+  .block-step {
+    flex-direction: column;
+    // justify-content: center;
+    height: auto;
+  }
+
+  .block-step__item {
+    width: 100%;
+    margin-top: 20px;
+  }
+  #reg-step01 {
+    // align-self: center;
+  }
+}

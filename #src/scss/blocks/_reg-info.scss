@@ -1,4 +1,5 @@
 
+
 .block-items {
   display: flex;
   flex-wrap: wrap;
@@ -20,3 +21,16 @@
   }
 }
 
+
+@media screen and (max-width: $Large) {
+  .block-items__item {
+    flex: 1 0 200px;
+   
+  }
+}
+
+@media screen and (max-width: $Medium) {
+  .block-items__item {
+    flex: 1 0 200px;
+  }
+}

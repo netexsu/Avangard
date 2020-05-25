@@ -43,3 +43,36 @@
   }
 }
 
+@media screen and (max-width: $Large) {
+  .block-example__texts {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+
+  }
+
+  .block-example__text-title  {
+    max-width: 100%;
+  }
+  .block-example__text-marker {
+    max-width: 100%;
+    display: block;
+    flex: 1 0 250px;
+    
+  }
+  .block-example__img {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: $Medium) {
+  .block-example__texts {
+    padding: 0 80px;
+  }
+ 
+  .block-example__text-marker {
+    flex: 0 1 350px;
+  }
+}

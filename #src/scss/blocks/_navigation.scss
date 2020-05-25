@@ -10,7 +10,7 @@
     padding: 10px 0;
     .wrapper {
       display: flex;
-      flex-wrap: wrap;
+      // flex-wrap: wrap;
       justify-content: space-between;
       align-items: center;
     }
@@ -19,9 +19,11 @@
 
 // Номера телефонов
 .phone {
+  margin-left: auto;
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
+  margin-right: 15px;
   &__icon {
     margin-right: 10px;
     margin-top: 3px;
@@ -51,6 +53,27 @@
   padding: 15px 0;
 }
 .menu {
+  padding: 3px 0;
+  .phone-menu {
+    display: none;
+  }
+  .btn-menu {
+    width: 30px;
+    height: 24px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    &__item {
+      width: 100%;
+      height: 3px;
+      background-color: #fff;
+    }
+  }
+  &__humburgers {
+    display: none;
+  }
+
   &__links {
     list-style-type: none;
     margin: 0;
@@ -63,11 +86,50 @@
     a {
       color: #fff;
       text-decoration: none;
-      font-size: 14px;
+      font-size: 12px;
       text-transform: uppercase;
       &:hover {
         text-decoration: underline;
       }
+    }
+  }
+}
+
+@media screen and (max-width: $Large) {
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    .phone-menu {
+      display: block;
+      color: #fff;
+      &__number {
+        font-size: 14px;
+      }
+    }
+    .btn-menu {
+      display: flex;
+    }
+    &__humburgers:checked + &__links {
+      max-height: 100vh;
+    }
+    &__links {
+      flex-direction: column;
+      width: 100%;
+      max-height: 0;
+      overflow: hidden;
+      transition: 0.5s all;
+    }
+    &__link {
+      width: 100%;
+      margin-top: 30px;
+    }
+  }
+  .navigation {
+    & .phone {
+      display: none;
     }
   }
 }
