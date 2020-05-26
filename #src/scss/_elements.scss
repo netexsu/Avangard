@@ -20,6 +20,8 @@
   border-radius: 100px;
   text-align: center;
   border: 0;
+  cursor: pointer;
+  transition: 0.5 all;
   // Красная кнопка
   &_red {
     background: $colorRed;
@@ -29,10 +31,17 @@
     font-weight: 900;
     font-size: 14px;
     text-transform: uppercase;
+    &:hover {
+      background: $colorRed2;
+    }
   }
   // Прозрачная кнопка
   &_transp {
     border: 1px solid $colorRed;
+    &:hover {
+      background: $colorRed;
+      color: #fff;
+    }
   }
   // Большой размер кнопки
   &_big {
