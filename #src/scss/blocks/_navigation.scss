@@ -27,6 +27,7 @@
   &__icon {
     margin-right: 10px;
     margin-top: 3px;
+    fill: green;
   }
   &__number {
     font-size: 14px;
@@ -37,16 +38,20 @@
   display: flex;
   flex-wrap: wrap;
   width: 300px;
-
+  color: $colorRed;
   padding: 0 20px;
   justify-content: center;
   align-items: center;
+  transition: 0.5 all;
+
   &__icon {
     margin-right: 10px;
   }
-  &__text {
+  & * {
     font-size: 14px;
-    color: $colorRed;
+  }
+  &:hover {
+    color: #fff;
   }
 }
 // меню

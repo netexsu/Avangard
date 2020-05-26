@@ -21,7 +21,7 @@ html {
  */
 
 body {
-	margin: 0;
+  margin: 0;
 }
 
 /**
@@ -360,8 +360,7 @@ button::-moz-focus-inner {
 * {
   box-sizing: border-box;
 }
-body,
-html,
+
 * {
-  transition: all easy 1s;
+  transition: 0.5s background;
 }
