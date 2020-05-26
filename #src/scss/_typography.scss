@@ -1,101 +1,70 @@
 * {
-  font-family: $font;
-  font-style: normal;
-  font-weight: normal;
-  font-size: calc(10px + 6 * (100vw / 1360));
-  line-height: 20px;
-  letter-spacing: 0.04em;
+	font-family: $font;
+	font-style: normal;
+	font-weight: normal;
+	font-size: calc(10px + 6 * (100vw / 1360));
+	line-height: 20px;
+	letter-spacing: 0.04em;
 }
 h1 {
-  font-family: $font;
-  font-style: normal;
-  font-weight: bold;
-  font-size: calc(36px + 12 * (100vw / 1360));
-  line-height: 56px;
-  letter-spacing: 0.04em;
+	font-family: $font;
+	font-style: normal;
+	font-weight: bold;
+	font-size: calc(30px + 18 * (100vw / 1360));
+	line-height: 1.3em;
+	letter-spacing: 0.04em;
 }
 h2 {
-  font-family: $font;
-  font-style: normal;
-  font-weight: bold;
-  font-size: calc(20px + 16 * (100vw / 1360));
-  line-height: 44px;
-  letter-spacing: 0.02em;
-  opacity: 0.9;
+	font-family: $font;
+	font-style: normal;
+	font-weight: bold;
+	font-size: calc(20px + 16 * (100vw / 1360));
+	line-height: 1.2em;
+	letter-spacing: 0.02em;
+	opacity: 0.9;
 }
 h3 {
-  font-family: $font;
-  font-style: normal;
-  font-weight: 600;
-  font-size: calc(20px + 10 * (100vw / 1360));
-  line-height: 37px;
-  letter-spacing: 0.04em;
+	font-family: $font;
+	font-style: normal;
+	font-weight: 600;
+	font-size: calc(20px + 10 * (100vw / 1360));
+	line-height: 1.2em;
+	letter-spacing: 0.04em;
 }
 h4 {
-  font-family: $font;
-  font-style: normal;
-  font-weight: 600;
-  font-size: calc(16px + 8 * (100vw / 1360));
-  line-height: 29px;
-  letter-spacing: 0.08em;
+	font-family: $font;
+	font-style: normal;
+	font-weight: 600;
+	font-size: calc(16px + 8 * (100vw / 1360));
+	line-height: 1.2em;
+	letter-spacing: 0.08em;
 }
 h5 {
-  font-family: $font;
-  font-style: normal;
-  font-weight: 600;
-  font-size: calc(12px + 6 * (100vw / 1360));
-  line-height: 22px;
-  letter-spacing: 0.02em;
+	font-family: $font;
+	font-style: normal;
+	font-weight: 600;
+	font-size: calc(12px + 6 * (100vw / 1360));
+	line-height: 1.2em;
+	letter-spacing: 0.02em;
 }
 
 @media screen and (min-width: $ExtraLarge) {
-  * {
-    font-family: $font;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 20px;
-    letter-spacing: 0.04em;
-  }
-  h1 {
-    font-family: $font;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 48px;
-    line-height: 56px;
-    letter-spacing: 0.04em;
-  }
-  h2 {
-    font-family: $font;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 44px;
-    letter-spacing: 0.02em;
-    opacity: 0.9;
-  }
-  h3 {
-    font-family: $font;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 30px;
-    line-height: 37px;
-    letter-spacing: 0.04em;
-  }
-  h4 {
-    font-family: $font;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 29px;
-    letter-spacing: 0.08em;
-  }
-  h5 {
-    font-family: $font;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 22px;
-    letter-spacing: 0.02em;
-  }
+	* {
+		font-size: 16px;
+	}
+	h1 {
+		font-size: 48px;
+	}
+	h2 {
+		font-size: 36px;
+	}
+	h3 {
+		font-size: 30px;
+	}
+	h4 {
+		font-size: 24px;
+	}
+	h5 {
+		font-size: 18px;
+	}
 }
