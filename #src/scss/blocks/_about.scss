@@ -1,5 +1,5 @@
 .about {
-  background-image: url(/dist/img/about-background.svg);
+  background-image: url(/dist/img/about_background.png);
   background-size: cover;
   padding-top: 1px;
   margin-top: $top1;
@@ -7,8 +7,6 @@
     max-width: 570px;
   }
 }
-
-
 
 .block-about {
   display: flex;
@@ -27,10 +25,9 @@
     color: rgba(255, 255, 255, 0.9);
   }
   &__text-title {
-    color:  #1663C7;
+    color: #1663c7;
     max-width: 417px;
     // margin-top: 55px;
-    
   }
   &__text-subtitle {
     font-weight: 600;
@@ -51,13 +48,13 @@
       width: 8px;
       height: 8px;
       border-radius: 50px;
-      background: #1663C7;
+      background: #1663c7;
     }
   }
 }
 
 .about-white {
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 90px 0px;
   padding: 49px;
 }
@@ -67,7 +64,8 @@
     width: 100%;
   }
 
-  .block-about__text-title,.block-about__text-subtitle {
+  .block-about__text-title,
+  .block-about__text-subtitle {
     max-width: 100%;
   }
 }
@@ -76,7 +74,7 @@
   .about {
     margin-top: 70px;
   }
-  .block-about  {
+  .block-about {
     margin-top: 40px;
     padding-bottom: 58px;
   }
