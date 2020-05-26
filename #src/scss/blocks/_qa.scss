@@ -48,7 +48,7 @@
     transition: all 0.5s linear;
   }
   &__input:checked + &__content {
-    max-height: 100vh;
+    max-height: 300vh;
     padding: 55px 100px;
   }
   &__input:checked + &__block::after {
@@ -88,7 +88,7 @@
 
   .accordeon {
     &__input:checked + &__content {
-      max-height: 100vh;
+      max-height: auto;
       padding: 35px 40px;
     }
   }

@@ -1,1468 +1,431 @@
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
-/* Document
-   ========================================================================== */
-/**
- * 1. Correct the line height in all browsers.
- * 2. Prevent adjustments of font size after orientation changes in iOS.
- */
-html {
-  line-height: 1.15;
-  /* 1 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */
-}
-
-/* Sections
-   ========================================================================== */
-/**
- * Remove the margin in all browsers.
- */
-body {
-  margin: 0;
-}
-
-/**
- * Render the `main` element consistently in IE.
- */
-main {
-  display: block;
-}
-
-/**
- * Correct the font size and margin on `h1` elements within `section` and
- * `article` contexts in Chrome, Firefox, and Safari.
- */
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
-
-/* Grouping content
-   ========================================================================== */
-/**
- * 1. Add the correct box sizing in Firefox.
- * 2. Show the overflow in Edge and IE.
- */
-hr {
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
-  /* 1 */
-  height: 0;
-  /* 1 */
-  overflow: visible;
-  /* 2 */
-}
-
-/**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
- */
-pre {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
-}
-
-/* Text-level semantics
-   ========================================================================== */
-/**
- * Remove the gray background on active links in IE 10.
- */
-a {
-  background-color: transparent;
-}
-
-/**
- * 1. Remove the bottom border in Chrome 57-
- * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
- */
-abbr[title] {
-  border-bottom: none;
-  /* 1 */
-  text-decoration: underline;
-  /* 2 */
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
-  /* 2 */
-}
-
-/**
- * Add the correct font weight in Chrome, Edge, and Safari.
- */
-b,
-strong {
-  font-weight: bolder;
-}
-
-/**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
- */
-code,
-kbd,
-samp {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
-}
-
-/**
- * Add the correct font size in all browsers.
- */
-small {
-  font-size: 80%;
-}
-
-/**
- * Prevent `sub` and `sup` elements from affecting the line height in
- * all browsers.
- */
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-
-sub {
-  bottom: -0.25em;
-}
-
-sup {
-  top: -0.5em;
-}
-
-/* Embedded content
-   ========================================================================== */
-/**
- * Remove the border on images inside links in IE 10.
- */
-img {
-  border-style: none;
-}
-
-/* Forms
-   ========================================================================== */
-/**
- * 1. Change the font styles in all browsers.
- * 2. Remove the margin in Firefox and Safari.
- */
-button,
-input,
-optgroup,
-select,
-textarea {
-  font-family: inherit;
-  /* 1 */
-  font-size: 100%;
-  /* 1 */
-  line-height: 1.15;
-  /* 1 */
-  margin: 0;
-  /* 2 */
-}
-
-/**
- * Show the overflow in IE.
- * 1. Show the overflow in Edge.
- */
-button,
-input {
-  /* 1 */
-  overflow: visible;
-}
-
-/**
- * Remove the inheritance of text transform in Edge, Firefox, and IE.
- * 1. Remove the inheritance of text transform in Firefox.
- */
-button,
-select {
-  /* 1 */
-  text-transform: none;
-}
-
-/**
- * Correct the inability to style clickable types in iOS and Safari.
- */
-button,
-[type=button],
-[type=reset],
-[type=submit] {
-  -webkit-appearance: button;
-}
-
-/**
- * Remove the inner border and padding in Firefox.
- */
-button::-moz-focus-inner,
-[type=button]::-moz-focus-inner,
-[type=reset]::-moz-focus-inner,
-[type=submit]::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-/**
- * Restore the focus styles unset by the previous rule.
- */
-button:-moz-focusring,
-[type=button]:-moz-focusring,
-[type=reset]:-moz-focusring,
-[type=submit]:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-/**
- * Correct the padding in Firefox.
- */
-fieldset {
-  padding: 0.35em 0.75em 0.625em;
-}
-
-/**
- * 1. Correct the text wrapping in Edge and IE.
- * 2. Correct the color inheritance from `fieldset` elements in IE.
- * 3. Remove the padding so developers are not caught out when they zero out
- *    `fieldset` elements in all browsers.
- */
-legend {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  /* 1 */
-  color: inherit;
-  /* 2 */
-  display: table;
-  /* 1 */
-  max-width: 100%;
-  /* 1 */
-  padding: 0;
-  /* 3 */
-  white-space: normal;
-  /* 1 */
-}
-
-/**
- * Add the correct vertical alignment in Chrome, Firefox, and Opera.
- */
-progress {
-  vertical-align: baseline;
-}
-
-/**
- * Remove the default vertical scrollbar in IE 10+.
- */
-textarea {
-  overflow: auto;
-}
-
-/**
- * 1. Add the correct box sizing in IE 10.
- * 2. Remove the padding in IE 10.
- */
-[type=checkbox],
-[type=radio] {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  /* 1 */
-  padding: 0;
-  /* 2 */
-}
-
-/**
- * Correct the cursor style of increment and decrement buttons in Chrome.
- */
-[type=number]::-webkit-inner-spin-button,
-[type=number]::-webkit-outer-spin-button {
-  height: auto;
-}
-
-/**
- * 1. Correct the odd appearance in Chrome and Safari.
- * 2. Correct the outline style in Safari.
- */
-[type=search] {
-  -webkit-appearance: textfield;
-  /* 1 */
-  outline-offset: -2px;
-  /* 2 */
-}
-
-/**
- * Remove the inner padding in Chrome and Safari on macOS.
- */
-[type=search]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-
-/**
- * 1. Correct the inability to style clickable types in iOS and Safari.
- * 2. Change font properties to `inherit` in Safari.
- */
-::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  /* 1 */
-  font: inherit;
-  /* 2 */
-}
-
-/* Interactive
-   ========================================================================== */
-/*
- * Add the correct display in Edge, IE 10+, and Firefox.
- */
-details {
-  display: block;
-}
-
-/*
- * Add the correct display in all browsers.
- */
-summary {
-  display: list-item;
-}
-
-/* Misc
-   ========================================================================== */
-/**
- * Add the correct display in IE 10+.
- */
-template {
-  display: none;
-}
-
-/**
- * Add the correct display in IE 10.
- */
-[hidden] {
-  display: none;
-}
-
-button:active,
-button:focus {
-  outline: none;
-}
-
-button::-moz-focus-inner {
-  border: 0;
-}
-
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-body,
-html,
-* {
-  -webkit-transition: all easy 1s;
-  -o-transition: all easy 1s;
-  transition: all easy 1s;
-}
-
-.container {
-  width: 1170px;
-  margin: 0 auto;
-}
-
-@media screen and (max-width: 1260px) {
-  .container {
-    width: 960px;
-  }
-}
-@media screen and (max-width: 992px) {
-  .container {
-    width: 720px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .container {
-    width: 540px;
-  }
-}
-@media screen and (max-width: 576px) {
-  .container {
-    width: calc(100% - 40px);
-  }
-}
-* {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: calc(10px + 6 * (100vw / 1360));
-  line-height: 20px;
-  letter-spacing: 0.04em;
-}
-
-h1 {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: bold;
-  font-size: calc(36px + 12 * (100vw / 1360));
-  line-height: 56px;
-  letter-spacing: 0.04em;
-}
-
-h2 {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: bold;
-  font-size: calc(20px + 16 * (100vw / 1360));
-  line-height: 44px;
-  letter-spacing: 0.02em;
-  opacity: 0.9;
-}
-
-h3 {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 600;
-  font-size: calc(20px + 10 * (100vw / 1360));
-  line-height: 37px;
-  letter-spacing: 0.04em;
-}
-
-h4 {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 600;
-  font-size: calc(16px + 8 * (100vw / 1360));
-  line-height: 29px;
-  letter-spacing: 0.08em;
-}
-
-h5 {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 600;
-  font-size: calc(12px + 6 * (100vw / 1360));
-  line-height: 22px;
-  letter-spacing: 0.02em;
-}
-
-@media screen and (min-width: 1260px) {
-  * {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 20px;
-    letter-spacing: 0.04em;
-  }
-
-  h1 {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 48px;
-    line-height: 56px;
-    letter-spacing: 0.04em;
-  }
-
-  h2 {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 44px;
-    letter-spacing: 0.02em;
-    opacity: 0.9;
-  }
-
-  h3 {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 30px;
-    line-height: 37px;
-    letter-spacing: 0.04em;
-  }
-
-  h4 {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 29px;
-    letter-spacing: 0.08em;
-  }
-
-  h5 {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 22px;
-    letter-spacing: 0.02em;
-  }
-}
-.logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.logo__img {
-  margin-right: 10px;
-}
-.logo__title {
-  color: #1663c7;
-  font-weight: 800;
-  margin: 0;
-  padding: 0;
-}
-.logo__subtitle {
-  font-size: 14px;
-}
-
-.btn {
-  border-radius: 100px;
-  text-align: center;
-  border: 0;
-}
-.btn_red {
-  background: #f93838;
-  -webkit-box-shadow: 4px 8px 20px rgba(9, 75, 160, 0.4);
-          box-shadow: 4px 8px 20px rgba(9, 75, 160, 0.4);
-  color: #fff;
-  letter-spacing: 0.08em;
-  font-weight: 900;
-  font-size: 14px;
-  text-transform: uppercase;
-}
-.btn_transp {
-  border: 1px solid #f93838;
-}
-.btn_big {
-  height: 78px;
-  line-height: 78px;
-}
-.btn_small {
-  height: 47px;
-  line-height: 47px;
-}
-
-.block-title {
-  text-align: center;
-  margin: 117px auto 0 auto;
-}
-.block-title__title {
-  opacity: 0.7;
-  text-transform: uppercase;
-}
-.block-title__sub-title {
-  font-weight: 800;
-  margin-top: -20px;
-}
-.block-title_white {
-  color: #ffffff;
-}
-
-@media screen and (max-width: 576px) {
-  .hidden__callback {
-    display: none;
-  }
-
-  .block-title {
-    margin: 58px auto 0 auto;
-  }
-
-  .btn_big {
-    height: 60px;
-    line-height: 60px;
-  }
-}
-.navigation {
-  background-color: #fff;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 5;
-  -webkit-box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
-}
-.navigation .block-contact {
-  padding: 10px 0;
-}
-.navigation .block-contact .wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.phone {
-  margin-left: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  margin-right: 15px;
-}
-.phone__icon {
-  margin-right: 10px;
-  margin-top: 3px;
-}
-.phone__number {
-  font-size: 14px;
-}
-
-.callback {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  width: 300px;
-  padding: 0 20px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.callback__icon {
-  margin-right: 10px;
-}
-.callback__text {
-  font-size: 14px;
-  color: #f93838;
-}
-
-.block-menu {
-  background-color: #1663c7;
-  padding: 15px 0;
-}
-
-.menu {
-  padding: 3px 0;
-}
-.menu .phone-menu {
-  display: none;
-}
-.menu .btn-menu {
-  width: 30px;
-  height: 24px;
-  display: none;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  cursor: pointer;
-}
-.menu .btn-menu__item {
-  width: 100%;
-  height: 3px;
-  background-color: #fff;
-}
-.menu__humburgers {
-  display: none;
-}
-.menu__links {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-.menu__link a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 12px;
-  text-transform: uppercase;
-}
-.menu__link a:hover {
-  text-decoration: underline;
-}
-
-@media screen and (max-width: 992px) {
-  .menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .menu .phone-menu {
-    display: block;
-    color: #fff;
-  }
-  .menu .phone-menu__number {
-    font-size: 14px;
-  }
-  .menu .btn-menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .menu__humburgers:checked + .menu__links {
-    max-height: 100vh;
-  }
-  .menu__links {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    width: 100%;
-    max-height: 0;
-    overflow: hidden;
-    -webkit-transition: 0.5s all;
-    -o-transition: 0.5s all;
-    transition: 0.5s all;
-  }
-  .menu__link {
-    width: 100%;
-    margin-top: 30px;
-  }
-
-  .navigation .phone {
-    display: none;
-  }
-}
-@media screen and (max-width: 576px) {
-  .callback {
-    width: 200px;
-    min-width: 200px;
-  }
-}
-body {
-  padding-top: 134px;
-  overflow-x: hidden;
-  scroll-behavior: smooth;
-}
-
-.header {
-  background: url("/dist/img/header_bg.png");
-  background-position: center center;
-  background-size: cover;
-}
-.header-blocks {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-}
-.header-blocks__text {
-  margin-top: 117px;
-  margin-bottom: 207px;
-  color: #fff;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 760px;
-          flex: 0 0 760px;
-}
-.header-blocks__uptitle {
-  text-transform: uppercase;
-  opacity: 0.9;
-  font-weight: 600;
-}
-.header-blocks__btn {
-  max-width: 378px;
-  margin-top: 60px;
-}
-.header-blocks__police {
-  margin-top: 19px;
-  font-size: 14px;
-  font-weight: bold;
-  max-width: 378px;
-  text-align: center;
-}
-.header-blocks__woman {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-@media screen and (max-width: 1260px) {
-  .header-blocks__woman {
-    display: none;
-  }
-}
-@media screen and (max-width: 768px) {
-  .header-blocks__text {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 760px;
-            flex: 1 1 760px;
-  }
-}
-@media screen and (max-width: 576px) {
-  .header-blocks__text {
-    margin-top: 58px;
-    margin-bottom: 58px;
-  }
-}
-.block-items {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-.block-items__item {
-  width: calc((100% / 4) - 20px);
-  margin-top: 86px;
-}
-.block-items__text {
-  text-align: center;
-  letter-spacing: 0.01em;
-  margin-top: 35px;
-}
-.block-items__img {
-  width: 75.25px;
-  height: 79.55px;
-  margin: 0 auto;
-  display: block;
-}
-
-@media screen and (max-width: 992px) {
-  .block-items__item {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 0 200px;
-            flex: 1 0 200px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .block-items__item {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 0 200px;
-            flex: 1 0 200px;
-  }
-}
-@media screen and (max-width: 576px) {
-  .block-items__item {
-    width: 45%;
-    margin-top: 30px;
-  }
-
-  .block-items__text {
-    margin-top: 15px;
-  }
-}
-.block-example {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin-top: 86px;
-}
-.block-example__texts {
-  width: calc(100% / 12 * 5 - 20px);
-}
-.block-example__text-title {
-  margin-top: 25px;
-  margin-bottom: 25px;
-  line-height: 25px;
-  max-width: 417px;
-}
-.block-example__text {
-  line-height: 25px;
-}
-.block-example__text-marker {
-  margin-top: 10px;
-  position: relative;
-  padding-left: 20px;
-  max-width: 385px;
-}
-.block-example__text-marker::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 6px;
-  width: 8px;
-  height: 8px;
-  border-radius: 50px;
-  background: #1663c7;
-}
-.block-example__img {
-  width: calc(100% / 12 * 7 - 20px);
-}
-
-@media screen and (max-width: 992px) {
-  .block-example__texts {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-
-  .block-example__text-title {
-    max-width: 100%;
-  }
-
-  .block-example__text-marker {
-    max-width: 100%;
-    display: block;
-    -webkit-box-flex: 1;
-        -ms-flex: 1 0 250px;
-            flex: 1 0 250px;
-  }
-
-  .block-example__img {
-    width: 100%;
-    margin-top: 20px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .block-example__texts {
-    padding: 0 80px;
-  }
-
-  .block-example__text-marker {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 350px;
-            flex: 0 1 350px;
-  }
-}
-@media screen and (max-width: 576px) {
-  .block-example {
-    margin-top: 40px;
-  }
-
-  .block-example__texts {
-    padding: 0;
-  }
-}
-.block-step {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-top: 86px;
-  height: 320px;
-}
-.block-step #reg-step01 {
-  position: relative;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-}
-.block-step #reg-step01::before {
-  content: "";
-  background: url("/dist/img/reg-step__number1.png");
-  position: absolute;
-  top: -15px;
-  right: 13px;
-  width: 79px;
-  height: 154px;
-}
-.block-step #reg-step01 img {
-  width: 40px;
-  height: 38.22px;
-}
-.block-step #reg-step02 {
-  position: relative;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-}
-.block-step #reg-step02::before {
-  content: "";
-  background: url("/dist/img/reg-step__number2.png");
-  position: absolute;
-  top: -15px;
-  right: -32px;
-  width: 136px;
-  height: 158px;
-}
-.block-step #reg-step02 img {
-  width: 40px;
-  height: 40px;
-}
-.block-step #reg-step03 {
-  position: relative;
-}
-.block-step #reg-step03::before {
-  content: "";
-  background: url("/dist/img/reg-step__number3.png");
-  position: absolute;
-  top: -15px;
-  right: -44px;
-  width: 136px;
-  height: 158px;
-}
-.block-step__item {
-  width: calc(100% / 3 - 100px);
-}
-.block-step__img {
-  background: #fff;
-  width: 76px;
-  height: 76px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-shadow: 4px 8px 30px rgba(22, 99, 199, 0.1);
-          box-shadow: 4px 8px 30px rgba(22, 99, 199, 0.1);
-  border-radius: 30px 0px;
-}
-.block-step__img img {
-  width: 50px;
-  height: 32.02px;
-}
-.block-step__text-title {
-  margin-top: 35px;
-}
-.block-step__text {
-  margin-top: -20px;
-}
-
-@media screen and (max-width: 1260px) {
-  .block-step__item {
-    width: calc(100% / 3 - 100px);
-  }
-}
-@media screen and (max-width: 992px) {
-  .block-step__item {
-    width: calc(100% / 3 - 45px);
-  }
-
-  .block-step__text {
-    font-size: 14px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .block-step {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    height: auto;
-  }
-
-  .block-step__item {
-    width: 100%;
-    margin-top: 20px;
-  }
-}
-@media screen and (max-width: 576px) {
-  .block-step {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-  }
-  .block-step #reg-step01,
-.block-step #reg-step02,
-.block-step #reg-step03 {
-    -ms-flex-item-align: start;
-        align-self: flex-start;
-  }
-
-  .block-step__item {
-    width: 80%;
-  }
-}
-.about {
-  background-image: url(/dist/img/about-background.svg);
-  background-size: cover;
-  padding-top: 1px;
-  margin-top: 207px;
-}
-.about .block-title {
-  max-width: 570px;
-}
-
-.block-about {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin-top: 86px;
-  padding-bottom: 117px;
-}
-.block-about__item {
-  width: calc(100% / 2 - 60px);
-}
-.block-about__text-history {
-  margin-bottom: 30px;
-  letter-spacing: 0.02em;
-  line-height: 24px;
-  color: rgba(255, 255, 255, 0.9);
-}
-.block-about__text-title {
-  color: #1663C7;
-  max-width: 417px;
-}
-.block-about__text-subtitle {
-  font-weight: 600;
-  line-height: 25px;
-  letter-spacing: 0.02em;
-  max-width: 385px;
-  margin-top: 25px;
-}
-.block-about__text-marker {
-  margin-top: 20px;
-  position: relative;
-  padding-left: 20px;
-}
-.block-about__text-marker::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 6px;
-  width: 8px;
-  height: 8px;
-  border-radius: 50px;
-  background: #1663C7;
-}
-
-.about-white {
-  background: #FFFFFF;
-  border-radius: 90px 0px;
-  padding: 49px;
-}
-
-@media screen and (max-width: 992px) {
-  .block-about__item {
-    width: 100%;
-  }
-
-  .block-about__text-title, .block-about__text-subtitle {
-    max-width: 100%;
-  }
-}
-@media screen and (max-width: 576px) {
-  .about {
-    margin-top: 70px;
-  }
-
-  .block-about {
-    margin-top: 40px;
-    padding-bottom: 58px;
-  }
-}
-.block-qa {
-  max-width: 873px;
-  margin: 86px auto 0;
-}
-
-.accordeon__input {
-  display: none;
-}
-.accordeon__block {
-  margin-top: 30px;
-  background: #ffffff;
-  -webkit-box-shadow: 4px 8px 30px rgba(22, 99, 199, 0.16);
-          box-shadow: 4px 8px 30px rgba(22, 99, 199, 0.16);
-  border-radius: 10px;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 1px 100px;
-  position: relative;
-}
-.accordeon__block::before {
-  content: "";
-  background: url("/dist/img/qa__question.svg");
-  background-size: cover;
-  width: 38px;
-  height: 38px;
-  position: absolute;
-  left: 25px;
-  top: 50%;
-  -webkit-transform: translatey(-50%);
-      -ms-transform: translatey(-50%);
-          transform: translatey(-50%);
-}
-.accordeon__block::after {
-  content: "";
-  background: url("/dist/img/qa__down.svg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: contain;
-  width: 38px;
-  height: 38px;
-  position: absolute;
-  right: 25px;
-  top: 50%;
-  -webkit-transform: translatey(-50%);
-      -ms-transform: translatey(-50%);
-          transform: translatey(-50%);
-}
-.accordeon__content {
-  padding: 0 100px;
-  max-height: 0;
-  overflow: hidden;
-  -webkit-transition: all 0.5s linear;
-  -o-transition: all 0.5s linear;
-  transition: all 0.5s linear;
-}
-.accordeon__input:checked + .accordeon__content {
-  max-height: 100vh;
-  padding: 55px 100px;
-}
-.accordeon__input:checked + .accordeon__block::after {
-  content: "";
-  background: url("/dist/img/qa__up.svg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  width: 38px;
-  height: 38px;
-  position: absolute;
-  right: 25px;
-  top: 50%;
-  -webkit-transform: translatey(-50%);
-      -ms-transform: translatey(-50%);
-          transform: translatey(-50%);
-}
-
-@media screen and (max-width: 576px) {
-  .block-qa {
-    margin: 40px auto 0;
-  }
-
-  .accordeon__block {
-    padding: 0 60px;
-  }
-  .accordeon__block::before {
-    width: 28px;
-    height: 28px;
-    left: 15px;
-  }
-  .accordeon__block::after {
-    width: 28px;
-    height: 28px;
-    right: 15px;
-  }
-
-  .accordeon__input:checked + .accordeon__content {
-    max-height: 100vh;
-    padding: 35px 40px;
-  }
-}
-.form {
-  background-image: url("/dist/img/form__bg.png");
-  background-size: cover;
-  padding-top: 1px;
-  margin-top: 207px;
-  padding-bottom: 86px;
-}
-
-.block-form {
-  max-width: 696px;
-  margin: 0 auto;
-  margin-top: 86px;
-}
-.block-form__input {
-  width: 100%;
-  height: 78px;
-  border-radius: 10px;
-  margin-bottom: 20px;
-  padding: 0 25px;
-  border: 0 !important;
-}
-.block-form__btn {
-  width: 100%;
-}
-.block-form__police {
-  font-size: 12px;
-  line-height: 28px;
-  letter-spacing: 0.02em;
-  color: #ffffff70;
-  text-align: center;
-}
-
-@media screen and (max-width: 576px) {
-  .form {
-    margin-top: 70px;
-  }
-
-  .block-form {
-    margin-top: 40px;
-  }
-
-  .block-form__input {
-    height: 60px;
-  }
-}
-.footer {
-  background: #021124;
-  padding-top: 30px;
-  padding-bottom: 40px;
-}
-
-.block-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-.block-footer__item {
-  width: calc(100% / 3 - 0px);
-}
-.block-footer__logo {
-  color: #fff;
-}
-.block-footer__text-info {
-  color: rgba(255, 255, 255, 0.4);
-  font-size: 12px;
-  margin-top: 17px;
-}
-.block-footer__text-ogrn {
-  color: rgba(255, 255, 255, 0.4);
-  font-size: 12px;
-  margin-top: 26px;
-}
-.block-footer__text-copyright {
-  color: rgba(255, 255, 255, 0.4);
-  font-size: 12px;
-  line-height: 16px;
-  margin-top: 10px;
-}
-.block-footer__links {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  list-style-type: none;
-}
-.block-footer__link {
-  margin-top: 10px;
-}
-.block-footer__link a {
-  font-weight: 500;
-  text-transform: none;
-  font-size: 12px;
-  line-height: 15px;
-  letter-spacing: 0.04em;
-  color: rgba(255, 255, 255, 0.7);
-}
-.block-footer__phone {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-.block-footer__phone-icon-text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-.block-footer__phone-text {
-  color: rgba(255, 255, 255, 0.9);
-}
-.block-footer__phone-number {
-  color: rgba(255, 255, 255, 0.9);
-}
-.block-footer_transp {
-  margin-top: 70px;
-  border: 1px solid #ffffff;
-  max-width: 290px;
-}
-.block-footer__text-application {
-  color: #ffffff;
-}
-.block-footer__online-application {
-  margin-top: 10px;
-  font-size: 12px;
-  line-height: 20px;
-  letter-spacing: 0.02em;
-  color: rgba(255, 255, 255, 0.7);
-}
-
-@media screen and (max-width: 768px) {
-  .block-footer {
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-  }
-
-  .block-footer__item {
-    width: calc(100% / 2 - 20px);
-  }
-
-  #block-footer__item2 {
-    display: none;
-  }
-}
-@media screen and (max-width: 576px) {
-  .block-footer {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-
-  .block-footer__item {
-    width: 100%;
-  }
-
-  .block-footer__phone {
-    position: relative;
-    top: -150px;
-  }
-
-  .block-footer__text-info {
-    position: relative;
-    top: 230px;
-  }
-
-  .block-footer_transp,
-.block-footer__online-application {
-    position: relative;
-    top: -190px;
-  }
-}
+/* Document ========================================================================== */
+/** 1. Correct the line height in all browsers. 2. Prevent adjustments of font size after orientation changes in iOS. */
+/* line 11, ../../../../Documents/GitHub/Avangard/#src/scss/_normalize.scss */ html { line-height: 1.15; /* 1 */ -webkit-text-size-adjust: 100%; /* 2 */ }
+
+/* Sections ========================================================================== */
+/** Remove the margin in all browsers. */
+/* line 23, ../../../../Documents/GitHub/Avangard/#src/scss/_normalize.scss */ body { margin: 0; }
+
+/** Render the `main` element consistently in IE. */
+/* line 31, ../../../../Documents/GitHub/Avangard/#src/scss/_normalize.scss */ main { display: block; }
+
+/** Correct the font size and margin on `h1` elements within `section` and `article` contexts in Chrome, Firefox, and Safari. */
+/* line 40, ../../../../Documents/GitHub/Avangard/#src/scss/_normalize.scss */ h1 { font-size: 2em; margin: 0.67em 0; }
+
+/* Grouping content ========================================================================== */
+/** 1. Add the correct box sizing in Firefox. 2. Show the overflow in Edge and IE. */
+/* line 53, ../../../../Documents/GitHub/Avangard/#src/scss/_normalize.scss */ hr { -webkit-box-sizing: content-box; box-sizing: content-box; /* 1 */ height: 0; /* 1 */ overflow: visible; /* 2 */ }
+
+/** 1. Correct the inheritance and scaling of font size in all browsers. 2. Correct the odd `em` font sizing in all browsers. */
+/* line 64, ../../../../Documents/GitHub/Avangard/#src/scss/_normalize.scss */ pre { font-family: monospace, monospace; /* 1 */ font-size: 1em; /* 2 */ }
+
+/* Text-level semantics ========================================================================== */
+/** Remove the gray background on active links in IE 10. */
+/* line 76, ../../../../Documents/GitHub/Avangard/#src/scss/_normalize.scss */ a { background-color: transparent; }
+
+/** 1. Remove the bottom border in Chrome 57- 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari. */
+/* line 85, ../../../../Documents/GitHub/Avangard/#src/scss/_normalize.scss */ abbr[title] { border-bottom: none; /* 1 */ text-decoration: underline; /* 2 */ -webkit-text-decoration: underline dotted; text-decoration: underline dotted; /* 2 */ }
+
+/** Add the correct font weight in Chrome, Edge, and Safari. */
+/* line 95, ../../../../Documents/GitHub/Avangard/#src/scss/_normalize.scss */ b, strong { font-weight: bolder; }
+
+/** 1. Correct the inheritance and scaling of font size in all browsers. 2. Correct the odd `em` font sizing in all browsers. */
+/* line 105, ../../../../Documents/GitHub/Avangard/#src/scss/_normalize.scss */ code, kbd, samp { font-family: monospace, monospace; /* 1 */ font-size: 1em; /* 2 */ }
+
+/** Add the correct font size in all browsers. */
+/* line 116, ../../../../Documents/GitHub/Avangard/#src/scss/_normalize.scss */ small { font-size: 80%; }
+
+/** Prevent `sub` and `sup` elements from affecting the line height in all browsers. */
+/* line 125, ../../../../Documents/GitHub/Avangard/#src/scss/_normalize.scss */ sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+
+/* line 133, ../../../../Documents/GitHub/Avangard/#src/scss/_normalize.scss */ sub { bottom: -0.25em; }
+
+/* line 137, ../../../../Documents/GitHub/Avangard/#src/scss/_normalize.scss */ sup { top: -0.5em; }
+
+/* Embedded content ========================================================================== */
+/** Remove the border on images inside links in IE 10. */
+/* line 148, ../../../../Documents/GitHub/Avangard/#src/scss/_normalize.scss */ img { border-style: none; }
+
+/* Forms ========================================================================== */
+/** 1. Change the font styles in all browsers. 2. Remove the margin in Firefox and Safari. */
+/* line 160, ../../../../Documents/GitHub/Avangard/#src/scss/_normalize.scss */ button, input, optgroup, select, textarea { font-family: inherit; /* 1 */ font-size: 100%; /* 1 */ line-height: 1.15; /* 1 */ margin: 0; /* 2 */ }
+
+/** Show the overflow in IE. 1. Show the overflow in Edge. */
+/* line 176, ../../../../Documents/GitHub/Avangard/#src/scss/_normalize.scss */ button, input { /* 1 */ overflow: visible; }
+
+/** Remove the inheritance of text transform in Edge, Firefox, and IE. 1. Remove the inheritance of text transform in Firefox. */
+/* line 187, ../../../../Documents/GitHub/Avangard/#src/scss/_normalize.scss */ button, select { /* 1 */ text-transform: none; }
+
+/** Correct the inability to style clickable types in iOS and Safari. */
+/* line 197, ../../../../Documents/GitHub/Avangard/#src/scss/_normalize.scss */ button, [type="button"], [type="reset"], [type="submit"] { -webkit-appearance: button; }
+
+/** Remove the inner border and padding in Firefox. */
+/* line 208, ../../../../Documents/GitHub/Avangard/#src/scss/_normalize.scss */ button::-moz-focus-inner, [type="button"]::-moz-focus-inner, [type="reset"]::-moz-focus-inner, [type="submit"]::-moz-focus-inner { border-style: none; padding: 0; }
+
+/** Restore the focus styles unset by the previous rule. */
+/* line 220, ../../../../Documents/GitHub/Avangard/#src/scss/_normalize.scss */ button:-moz-focusring, [type="button"]:-moz-focusring, [type="reset"]:-moz-focusring, [type="submit"]:-moz-focusring { outline: 1px dotted ButtonText; }
+
+/** Correct the padding in Firefox. */
+/* line 231, ../../../../Documents/GitHub/Avangard/#src/scss/_normalize.scss */ fieldset { padding: 0.35em 0.75em 0.625em; }
+
+/** 1. Correct the text wrapping in Edge and IE. 2. Correct the color inheritance from `fieldset` elements in IE. 3. Remove the padding so developers are not caught out when they zero out `fieldset` elements in all browsers. */
+/* line 242, ../../../../Documents/GitHub/Avangard/#src/scss/_normalize.scss */ legend { -webkit-box-sizing: border-box; box-sizing: border-box; /* 1 */ color: inherit; /* 2 */ display: table; /* 1 */ max-width: 100%; /* 1 */ padding: 0; /* 3 */ white-space: normal; /* 1 */ }
+
+/** Add the correct vertical alignment in Chrome, Firefox, and Opera. */
+/* line 255, ../../../../Documents/GitHub/Avangard/#src/scss/_normalize.scss */ progress { vertical-align: baseline; }
+
+/** Remove the default vertical scrollbar in IE 10+. */
+/* line 263, ../../../../Documents/GitHub/Avangard/#src/scss/_normalize.scss */ textarea { overflow: auto; }
+
+/** 1. Add the correct box sizing in IE 10. 2. Remove the padding in IE 10. */
+/* line 272, ../../../../Documents/GitHub/Avangard/#src/scss/_normalize.scss */ [type="checkbox"], [type="radio"] { -webkit-box-sizing: border-box; box-sizing: border-box; /* 1 */ padding: 0; /* 2 */ }
+
+/** Correct the cursor style of increment and decrement buttons in Chrome. */
+/* line 282, ../../../../Documents/GitHub/Avangard/#src/scss/_normalize.scss */ [type="number"]::-webkit-inner-spin-button, [type="number"]::-webkit-outer-spin-button { height: auto; }
+
+/** 1. Correct the odd appearance in Chrome and Safari. 2. Correct the outline style in Safari. */
+/* line 292, ../../../../Documents/GitHub/Avangard/#src/scss/_normalize.scss */ [type="search"] { -webkit-appearance: textfield; /* 1 */ outline-offset: -2px; /* 2 */ }
+
+/** Remove the inner padding in Chrome and Safari on macOS. */
+/* line 301, ../../../../Documents/GitHub/Avangard/#src/scss/_normalize.scss */ [type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
+
+/** 1. Correct the inability to style clickable types in iOS and Safari. 2. Change font properties to `inherit` in Safari. */
+/* line 310, ../../../../Documents/GitHub/Avangard/#src/scss/_normalize.scss */ ::-webkit-file-upload-button { -webkit-appearance: button; /* 1 */ font: inherit; /* 2 */ }
+
+/* Interactive ========================================================================== */
+/* Add the correct display in Edge, IE 10+, and Firefox. */
+/* line 322, ../../../../Documents/GitHub/Avangard/#src/scss/_normalize.scss */ details { display: block; }
+
+/* Add the correct display in all browsers. */
+/* line 330, ../../../../Documents/GitHub/Avangard/#src/scss/_normalize.scss */ summary { display: list-item; }
+
+/* Misc ========================================================================== */
+/** Add the correct display in IE 10+. */
+/* line 341, ../../../../Documents/GitHub/Avangard/#src/scss/_normalize.scss */ template { display: none; }
+
+/** Add the correct display in IE 10. */
+/* line 349, ../../../../Documents/GitHub/Avangard/#src/scss/_normalize.scss */ [hidden] { display: none; }
+
+/* line 353, ../../../../Documents/GitHub/Avangard/#src/scss/_normalize.scss */ button:active, button:focus { outline: none; }
+
+/* line 357, ../../../../Documents/GitHub/Avangard/#src/scss/_normalize.scss */ button::-moz-focus-inner { border: 0; }
+
+/* line 360, ../../../../Documents/GitHub/Avangard/#src/scss/_normalize.scss */ * { -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* line 363, ../../../../Documents/GitHub/Avangard/#src/scss/_normalize.scss */ body, html, * { -webkit-transition: all easy 1s; -o-transition: all easy 1s; transition: all easy 1s; }
+
+/* line 1, ../../../../Documents/GitHub/Avangard/#src/scss/_layout.scss */ .container { width: 1170px; margin: 0 auto; }
+
+@media screen and (max-width: 1260px) { /* line 6, ../../../../Documents/GitHub/Avangard/#src/scss/_layout.scss */ .container { width: 960px; } }
+
+@media screen and (max-width: 992px) { /* line 11, ../../../../Documents/GitHub/Avangard/#src/scss/_layout.scss */ .container { width: 720px; } }
+
+@media screen and (max-width: 768px) { /* line 16, ../../../../Documents/GitHub/Avangard/#src/scss/_layout.scss */ .container { width: 540px; } }
+
+@media screen and (max-width: 576px) { /* line 21, ../../../../Documents/GitHub/Avangard/#src/scss/_layout.scss */ .container { width: calc(100% - 40px); } }
+
+/* line 1, ../../../../Documents/GitHub/Avangard/#src/scss/_typography.scss */ * { font-family: Montserrat; font-style: normal; font-weight: normal; font-size: calc(10px + 6 * (100vw / 1360)); line-height: 20px; letter-spacing: 0.04em; }
+
+/* line 9, ../../../../Documents/GitHub/Avangard/#src/scss/_typography.scss */ h1 { font-family: Montserrat; font-style: normal; font-weight: bold; font-size: calc(36px + 12 * (100vw / 1360)); line-height: 56px; letter-spacing: 0.04em; }
+
+/* line 17, ../../../../Documents/GitHub/Avangard/#src/scss/_typography.scss */ h2 { font-family: Montserrat; font-style: normal; font-weight: bold; font-size: calc(20px + 16 * (100vw / 1360)); line-height: 44px; letter-spacing: 0.02em; opacity: 0.9; }
+
+/* line 26, ../../../../Documents/GitHub/Avangard/#src/scss/_typography.scss */ h3 { font-family: Montserrat; font-style: normal; font-weight: 600; font-size: calc(20px + 10 * (100vw / 1360)); line-height: 37px; letter-spacing: 0.04em; }
+
+/* line 34, ../../../../Documents/GitHub/Avangard/#src/scss/_typography.scss */ h4 { font-family: Montserrat; font-style: normal; font-weight: 600; font-size: calc(16px + 8 * (100vw / 1360)); line-height: 29px; letter-spacing: 0.08em; }
+
+/* line 42, ../../../../Documents/GitHub/Avangard/#src/scss/_typography.scss */ h5 { font-family: Montserrat; font-style: normal; font-weight: 600; font-size: calc(12px + 6 * (100vw / 1360)); line-height: 22px; letter-spacing: 0.02em; }
+
+@media screen and (min-width: 1260px) { /* line 52, ../../../../Documents/GitHub/Avangard/#src/scss/_typography.scss */ * { font-family: Montserrat; font-style: normal; font-weight: normal; font-size: 16px; line-height: 20px; letter-spacing: 0.04em; }
+		/* line 60, ../../../../Documents/GitHub/Avangard/#src/scss/_typography.scss */ h1 { font-family: Montserrat; font-style: normal; font-weight: bold; font-size: 48px; line-height: 56px; letter-spacing: 0.04em; }
+		/* line 68, ../../../../Documents/GitHub/Avangard/#src/scss/_typography.scss */ h2 { font-family: Montserrat; font-style: normal; font-weight: bold; font-size: 36px; line-height: 44px; letter-spacing: 0.02em; opacity: 0.9; }
+		/* line 77, ../../../../Documents/GitHub/Avangard/#src/scss/_typography.scss */ h3 { font-family: Montserrat; font-style: normal; font-weight: 600; font-size: 30px; line-height: 37px; letter-spacing: 0.04em; }
+		/* line 85, ../../../../Documents/GitHub/Avangard/#src/scss/_typography.scss */ h4 { font-family: Montserrat; font-style: normal; font-weight: 600; font-size: 24px; line-height: 29px; letter-spacing: 0.08em; }
+		/* line 93, ../../../../Documents/GitHub/Avangard/#src/scss/_typography.scss */ h5 { font-family: Montserrat; font-style: normal; font-weight: 600; font-size: 18px; line-height: 22px; letter-spacing: 0.02em; } }
+
+/* line 2, ../../../../Documents/GitHub/Avangard/#src/scss/_elements.scss */ .logo { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+/* line 5, ../../../../Documents/GitHub/Avangard/#src/scss/_elements.scss */ .logo__img { margin-right: 10px; }
+
+/* line 8, ../../../../Documents/GitHub/Avangard/#src/scss/_elements.scss */ .logo__title { color: #1663c7; font-weight: 800; margin: 0; padding: 0; }
+
+/* line 14, ../../../../Documents/GitHub/Avangard/#src/scss/_elements.scss */ .logo__subtitle { font-size: 14px; }
+
+/* line 19, ../../../../Documents/GitHub/Avangard/#src/scss/_elements.scss */ .btn { border-radius: 100px; text-align: center; border: 0; }
+
+/* line 24, ../../../../Documents/GitHub/Avangard/#src/scss/_elements.scss */ .btn_red { background: #f93838; -webkit-box-shadow: 4px 8px 20px rgba(9, 75, 160, 0.4); box-shadow: 4px 8px 20px rgba(9, 75, 160, 0.4); color: #fff; letter-spacing: 0.08em; font-weight: 900; font-size: 14px; text-transform: uppercase; }
+
+/* line 34, ../../../../Documents/GitHub/Avangard/#src/scss/_elements.scss */ .btn_transp { border: 1px solid #f93838; }
+
+/* line 38, ../../../../Documents/GitHub/Avangard/#src/scss/_elements.scss */ .btn_big { height: 78px; line-height: 78px; }
+
+/* line 43, ../../../../Documents/GitHub/Avangard/#src/scss/_elements.scss */ .btn_small { height: 47px; line-height: 47px; }
+
+/* line 50, ../../../../Documents/GitHub/Avangard/#src/scss/_elements.scss */ .block-title { text-align: center; margin: 117px auto 0 auto; }
+
+/* line 54, ../../../../Documents/GitHub/Avangard/#src/scss/_elements.scss */ .block-title__title { opacity: 0.7; text-transform: uppercase; }
+
+/* line 58, ../../../../Documents/GitHub/Avangard/#src/scss/_elements.scss */ .block-title__sub-title { font-weight: 800; margin-top: -20px; }
+
+/* line 62, ../../../../Documents/GitHub/Avangard/#src/scss/_elements.scss */ .block-title_white { color: #ffffff; }
+
+@media screen and (max-width: 576px) { /* line 67, ../../../../Documents/GitHub/Avangard/#src/scss/_elements.scss */ .hidden__callback { display: none; }
+		/* line 71, ../../../../Documents/GitHub/Avangard/#src/scss/_elements.scss */ .block-title { margin: 58px auto 0 auto; }
+		/* line 75, ../../../../Documents/GitHub/Avangard/#src/scss/_elements.scss */ .btn_big { height: 60px; line-height: 60px; } }
+
+/* line 1, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_navigation.scss */ .navigation { background-color: #fff; position: fixed; top: 0; width: 100%; z-index: 5; -webkit-box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1); box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1); }
+
+/* line 9, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_navigation.scss */ .navigation .block-contact { padding: 10px 0; }
+
+/* line 11, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_navigation.scss */ .navigation .block-contact .wrapper { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+/* line 21, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_navigation.scss */ .phone { margin-left: auto; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; margin-right: 15px; }
+
+/* line 27, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_navigation.scss */ .phone__icon { margin-right: 10px; margin-top: 3px; }
+
+/* line 31, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_navigation.scss */ .phone__number { font-size: 14px; }
+
+/* line 36, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_navigation.scss */ .callback { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; width: 300px; padding: 0 20px; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+/* line 44, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_navigation.scss */ .callback__icon { margin-right: 10px; }
+
+/* line 47, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_navigation.scss */ .callback__text { font-size: 14px; color: #f93838; }
+
+/* line 53, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_navigation.scss */ .block-menu { background-color: #1663c7; padding: 15px 0; }
+
+/* line 57, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_navigation.scss */ .menu { padding: 3px 0; }
+
+/* line 59, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_navigation.scss */ .menu .phone-menu { display: none; }
+
+/* line 62, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_navigation.scss */ .menu .btn-menu { width: 30px; height: 24px; display: none; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; cursor: pointer; }
+
+/* line 69, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_navigation.scss */ .menu .btn-menu__item { width: 100%; height: 3px; background-color: #fff; }
+
+/* line 75, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_navigation.scss */ .menu__humburgers { display: none; }
+
+/* line 79, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_navigation.scss */ .menu__links { list-style-type: none; margin: 0; padding: 0; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+
+/* line 88, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_navigation.scss */ .menu__link a { color: #fff; text-decoration: none; font-size: 12px; text-transform: uppercase; }
+
+/* line 93, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_navigation.scss */ .menu__link a:hover { text-decoration: underline; }
+
+@media screen and (max-width: 992px) { /* line 101, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_navigation.scss */ .menu { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+		/* line 107, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_navigation.scss */ .menu .phone-menu { display: block; color: #fff; }
+		/* line 110, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_navigation.scss */ .menu .phone-menu__number { font-size: 14px; }
+		/* line 114, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_navigation.scss */ .menu .btn-menu { display: -webkit-box; display: -ms-flexbox; display: flex; }
+		/* line 117, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_navigation.scss */ .menu__humburgers:checked + .menu__links { max-height: 100vh; }
+		/* line 120, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_navigation.scss */ .menu__links { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; width: 100%; max-height: 0; overflow: hidden; -webkit-transition: 0.5s all; -o-transition: 0.5s all; transition: 0.5s all; }
+		/* line 127, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_navigation.scss */ .menu__link { width: 100%; margin-top: 30px; }
+		/* line 133, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_navigation.scss */ .navigation .phone { display: none; } }
+
+@media screen and (max-width: 576px) { /* line 139, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_navigation.scss */ .callback { width: 200px; min-width: 200px; } }
+
+/* line 1, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_header.scss */ body { padding-top: 134px; overflow-x: hidden; scroll-behavior: smooth; }
+
+/* line 6, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_header.scss */ .header { background: url("/dist/img/header_bg.png"); background-position: center center; background-size: cover; }
+
+/* line 10, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_header.scss */ .header-blocks { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end; }
+
+/* line 13, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_header.scss */ .header-blocks__text { margin-top: 117px; margin-bottom: 207px; color: #fff; -webkit-box-flex: 0; -ms-flex: 0 0 760px; flex: 0 0 760px; }
+
+/* line 19, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_header.scss */ .header-blocks__uptitle { text-transform: uppercase; opacity: 0.9; font-weight: 600; }
+
+/* line 25, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_header.scss */ .header-blocks__btn { max-width: 378px; margin-top: 60px; }
+
+/* line 29, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_header.scss */ .header-blocks__police { margin-top: 19px; font-size: 14px; font-weight: bold; max-width: 378px; text-align: center; }
+
+/* line 36, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_header.scss */ .header-blocks__woman { display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+@media screen and (max-width: 1260px) { /* line 42, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_header.scss */ .header-blocks__woman { display: none; } }
+
+@media screen and (max-width: 768px) { /* line 47, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_header.scss */ .header-blocks__text { -webkit-box-flex: 1; -ms-flex: 1 1 760px; flex: 1 1 760px; } }
+
+@media screen and (max-width: 576px) { /* line 54, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_header.scss */ .header-blocks__text { margin-top: 58px; margin-bottom: 58px; } }
+
+/* line 1, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_reg-info.scss */ .block-items { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+
+/* line 5, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_reg-info.scss */ .block-items__item { width: calc((100% / 4) - 20px); margin-top: 86px; }
+
+/* line 9, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_reg-info.scss */ .block-items__text { text-align: center; letter-spacing: 0.01em; margin-top: 35px; }
+
+/* line 14, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_reg-info.scss */ .block-items__img { width: 75.25px; height: 79.55px; margin: 0 auto; display: block; }
+
+@media screen and (max-width: 992px) { /* line 23, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_reg-info.scss */ .block-items__item { -webkit-box-flex: 1; -ms-flex: 1 0 200px; flex: 1 0 200px; } }
+
+@media screen and (max-width: 768px) { /* line 29, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_reg-info.scss */ .block-items__item { -webkit-box-flex: 1; -ms-flex: 1 0 200px; flex: 1 0 200px; } }
+
+@media screen and (max-width: 576px) { /* line 35, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_reg-info.scss */ .block-items__item { width: 45%; margin-top: 30px; }
+		/* line 39, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_reg-info.scss */ .block-items__text { margin-top: 15px; } }
+
+/* line 1, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_reg-example.scss */ .block-example { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -ms-flex-wrap: wrap; flex-wrap: wrap; margin-top: 86px; }
+
+/* line 8, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_reg-example.scss */ .block-example__texts { width: calc(100% / 12 * 5 - 20px); }
+
+/* line 12, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_reg-example.scss */ .block-example__text-title { margin-top: 25px; margin-bottom: 15px; line-height: 25px; max-width: 417px; }
+
+/* line 19, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_reg-example.scss */ .block-example__text { line-height: 25px; }
+
+/* line 23, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_reg-example.scss */ .block-example__text-marker { margin-top: 10px; position: relative; padding-left: 20px; max-width: 385px; }
+
+/* line 28, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_reg-example.scss */ .block-example__text-marker::before { content: ""; position: absolute; left: 0; top: 6px; width: 8px; height: 8px; border-radius: 50px; background: #1663c7; }
+
+/* line 40, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_reg-example.scss */ .block-example__img { width: calc(100% / 12 * 7 - 20px); }
+
+@media screen and (max-width: 992px) { /* line 46, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_reg-example.scss */ .block-example__texts { width: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+		/* line 52, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_reg-example.scss */ .block-example__text-title { max-width: 100%; }
+		/* line 55, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_reg-example.scss */ .block-example__text-marker { max-width: 100%; display: block; -webkit-box-flex: 1; -ms-flex: 1 0 250px; flex: 1 0 250px; }
+		/* line 60, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_reg-example.scss */ .block-example__img { width: 100%; margin-top: 20px; } }
+
+@media screen and (max-width: 768px) { /* line 67, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_reg-example.scss */ .block-example__texts { padding: 0 80px; }
+		/* line 71, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_reg-example.scss */ .block-example__text-marker { -webkit-box-flex: 0; -ms-flex: 0 1 350px; flex: 0 1 350px; } }
+
+@media screen and (max-width: 576px) { /* line 76, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_reg-example.scss */ .block-example { margin-top: 40px; }
+		/* line 80, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_reg-example.scss */ .block-example__texts { padding: 0; } }
+
+/* line 1, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_reg-step.scss */ .block-step { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; margin-top: 86px; height: 320px; }
+
+/* line 7, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_reg-step.scss */ .block-step #reg-step01 { position: relative; -ms-flex-item-align: end; align-self: flex-end; }
+
+/* line 10, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_reg-step.scss */ .block-step #reg-step01::before { content: ""; background: url("/dist/img/reg-step__number1.png"); position: absolute; top: -15px; right: 13px; width: 79px; height: 154px; }
+
+/* line 19, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_reg-step.scss */ .block-step #reg-step01 img { width: 40px; height: 38.22px; }
+
+/* line 24, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_reg-step.scss */ .block-step #reg-step02 { position: relative; -ms-flex-item-align: center; -ms-grid-row-align: center; align-self: center; }
+
+/* line 27, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_reg-step.scss */ .block-step #reg-step02::before { content: ""; background: url("/dist/img/reg-step__number2.png"); position: absolute; top: -15px; right: -32px; width: 136px; height: 158px; }
+
+/* line 36, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_reg-step.scss */ .block-step #reg-step02 img { width: 40px; height: 40px; }
+
+/* line 41, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_reg-step.scss */ .block-step #reg-step03 { position: relative; }
+
+/* line 43, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_reg-step.scss */ .block-step #reg-step03::before { content: ""; background: url("/dist/img/reg-step__number3.png"); position: absolute; top: -15px; right: -44px; width: 136px; height: 158px; }
+
+/* line 54, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_reg-step.scss */ .block-step__item { width: calc(100% / 3 - 100px); }
+
+/* line 57, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_reg-step.scss */ .block-step__img { background: #fff; width: 76px; height: 76px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-shadow: 4px 8px 30px rgba(22, 99, 199, 0.1); box-shadow: 4px 8px 30px rgba(22, 99, 199, 0.1); border-radius: 30px 0px; }
+
+/* line 66, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_reg-step.scss */ .block-step__img img { width: 50px; height: 32.02px; }
+
+/* line 72, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_reg-step.scss */ .block-step__text-title { margin-top: 35px; }
+
+/* line 76, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_reg-step.scss */ .block-step__text { margin-top: -20px; }
+
+@media screen and (max-width: 1260px) { /* line 82, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_reg-step.scss */ .block-step__item { width: calc(100% / 3 - 100px); } }
+
+@media screen and (max-width: 992px) { /* line 88, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_reg-step.scss */ .block-step__item { width: calc(100% / 3 - 45px); }
+		/* line 91, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_reg-step.scss */ .block-step__text { font-size: 14px; } }
+
+@media screen and (max-width: 768px) { /* line 97, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_reg-step.scss */ .block-step { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; height: auto; }
+		/* line 103, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_reg-step.scss */ .block-step__item { width: 100%; margin-top: 20px; } }
+
+@media screen and (max-width: 576px) { /* line 109, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_reg-step.scss */ .block-step { -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; }
+		/* line 111, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_reg-step.scss */ .block-step #reg-step01, .block-step #reg-step02, .block-step #reg-step03 { -ms-flex-item-align: start; align-self: flex-start; }
+		/* line 118, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_reg-step.scss */ .block-step__item { width: 80%; } }
+
+/* line 1, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_about.scss */ .about { background-image: url(/dist/img/about-background.svg); background-size: cover; padding-top: 1px; margin-top: 207px; }
+
+/* line 6, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_about.scss */ .about .block-title { max-width: 570px; }
+
+/* line 13, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_about.scss */ .block-about { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -ms-flex-wrap: wrap; flex-wrap: wrap; margin-top: 86px; padding-bottom: 117px; }
+
+/* line 19, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_about.scss */ .block-about__item { width: calc(100% / 2 - 60px); }
+
+/* line 23, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_about.scss */ .block-about__text-history { margin-bottom: 30px; letter-spacing: 0.02em; line-height: 24px; color: rgba(255, 255, 255, 0.9); }
+
+/* line 29, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_about.scss */ .block-about__text-title { color: #1663C7; max-width: 417px; }
+
+/* line 35, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_about.scss */ .block-about__text-subtitle { font-weight: 600; line-height: 25px; letter-spacing: 0.02em; max-width: 385px; margin-top: 25px; }
+
+/* line 42, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_about.scss */ .block-about__text-marker { margin-top: 20px; position: relative; padding-left: 20px; }
+
+/* line 46, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_about.scss */ .block-about__text-marker::before { content: ""; position: absolute; left: 0; top: 6px; width: 8px; height: 8px; border-radius: 50px; background: #1663C7; }
+
+/* line 59, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_about.scss */ .about-white { background: #FFFFFF; border-radius: 90px 0px; padding: 49px; }
+
+@media screen and (max-width: 992px) { /* line 66, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_about.scss */ .block-about__item { width: 100%; }
+		/* line 70, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_about.scss */ .block-about__text-title, .block-about__text-subtitle { max-width: 100%; } }
+
+@media screen and (max-width: 576px) { /* line 76, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_about.scss */ .about { margin-top: 70px; }
+		/* line 79, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_about.scss */ .block-about { margin-top: 40px; padding-bottom: 58px; } }
+
+/* line 1, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_qa.scss */ .block-qa { max-width: 873px; margin: 86px auto 0; }
+
+/* line 6, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_qa.scss */ .accordeon__input { display: none; }
+
+/* line 9, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_qa.scss */ .accordeon__block { margin-top: 30px; background: #ffffff; -webkit-box-shadow: 4px 8px 30px rgba(22, 99, 199, 0.16); box-shadow: 4px 8px 30px rgba(22, 99, 199, 0.16); border-radius: 10px; cursor: pointer; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding: 1px 100px; position: relative; }
+
+/* line 19, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_qa.scss */ .accordeon__block::before { content: ""; background: url("/dist/img/qa__question.svg"); background-size: cover; width: 38px; height: 38px; position: absolute; left: 25px; top: 50%; -webkit-transform: translatey(-50%); -ms-transform: translatey(-50%); transform: translatey(-50%); }
+
+/* line 30, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_qa.scss */ .accordeon__block::after { content: ""; background: url("/dist/img/qa__down.svg"); background-repeat: no-repeat; background-position: center center; background-size: contain; width: 38px; height: 38px; position: absolute; right: 25px; top: 50%; -webkit-transform: translatey(-50%); -ms-transform: translatey(-50%); transform: translatey(-50%); }
+
+/* line 44, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_qa.scss */ .accordeon__content { padding: 0 100px; max-height: 0; overflow: hidden; -webkit-transition: all 0.5s linear; -o-transition: all 0.5s linear; transition: all 0.5s linear; }
+
+/* line 50, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_qa.scss */ .accordeon__input:checked + .accordeon__content { max-height: 300vh; padding: 55px 100px; }
+
+/* line 54, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_qa.scss */ .accordeon__input:checked + .accordeon__block::after { content: ""; background: url("/dist/img/qa__up.svg"); background-repeat: no-repeat; background-position: center center; width: 38px; height: 38px; position: absolute; right: 25px; top: 50%; -webkit-transform: translatey(-50%); -ms-transform: translatey(-50%); transform: translatey(-50%); }
+
+@media screen and (max-width: 576px) { /* line 70, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_qa.scss */ .block-qa { margin: 40px auto 0; }
+		/* line 75, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_qa.scss */ .accordeon__block { padding: 0 60px; }
+		/* line 77, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_qa.scss */ .accordeon__block::before { width: 28px; height: 28px; left: 15px; }
+		/* line 82, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_qa.scss */ .accordeon__block::after { width: 28px; height: 28px; right: 15px; }
+		/* line 90, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_qa.scss */ .accordeon__input:checked + .accordeon__content { max-height: auto; padding: 35px 40px; } }
+
+/* line 1, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_form.scss */ .form { background-image: url("/dist/img/form__bg.png"); background-size: cover; padding-top: 1px; margin-top: 207px; padding-bottom: 86px; }
+
+/* line 8, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_form.scss */ .block-form { max-width: 696px; margin: 0 auto; margin-top: 86px; }
+
+/* line 12, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_form.scss */ .block-form__input { width: 100%; height: 78px; border-radius: 10px; margin-bottom: 20px; padding: 0 25px; border: 0 !important; }
+
+/* line 20, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_form.scss */ .block-form__btn { width: 100%; }
+
+/* line 23, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_form.scss */ .block-form__police { font-size: 12px; line-height: 28px; letter-spacing: 0.02em; color: #ffffff70; text-align: center; }
+
+@media screen and (max-width: 576px) { /* line 34, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_form.scss */ .form { margin-top: 70px; }
+		/* line 38, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_form.scss */ .block-form { margin-top: 40px; }
+		/* line 41, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_form.scss */ .block-form__input { height: 60px; } }
+
+/* line 1, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_footer.scss */ .footer { background: #021124; padding-top: 30px; padding-bottom: 40px; }
+
+/* line 7, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_footer.scss */ .block-footer { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+
+/* line 12, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_footer.scss */ .block-footer__item { width: calc(100% / 3 - 0px); }
+
+/* line 17, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_footer.scss */ .block-footer__logo { color: #fff; }
+
+/* line 21, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_footer.scss */ .block-footer__text-info { color: rgba(255, 255, 255, 0.4); font-size: 12px; margin-top: 17px; }
+
+/* line 27, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_footer.scss */ .block-footer__text-ogrn { color: rgba(255, 255, 255, 0.4); font-size: 12px; margin-top: 26px; }
+
+/* line 33, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_footer.scss */ .block-footer__text-copyright { color: rgba(255, 255, 255, 0.4); font-size: 12px; line-height: 16px; margin-top: 10px; }
+
+/* line 40, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_footer.scss */ .block-footer__links { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; list-style-type: none; }
+
+/* line 46, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_footer.scss */ .block-footer__link { margin-top: 10px; }
+
+/* line 48, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_footer.scss */ .block-footer__link a { font-weight: 500; text-transform: none; font-size: 12px; line-height: 15px; letter-spacing: 0.04em; color: rgba(255, 255, 255, 0.7); }
+
+/* line 58, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_footer.scss */ .block-footer__phone { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
+
+/* line 62, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_footer.scss */ .block-footer__phone-icon-text { display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+/* line 66, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_footer.scss */ .block-footer__phone-text { color: rgba(255, 255, 255, 0.9); }
+
+/* line 70, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_footer.scss */ .block-footer__phone-number { color: rgba(255, 255, 255, 0.9); }
+
+/* line 74, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_footer.scss */ .block-footer_transp { margin-top: 70px; border: 1px solid #ffffff; max-width: 290px; }
+
+/* line 80, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_footer.scss */ .block-footer__text-application { color: #ffffff; }
+
+/* line 84, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_footer.scss */ .block-footer__online-application { margin-top: 10px; font-size: 12px; line-height: 20px; letter-spacing: 0.02em; color: rgba(255, 255, 255, 0.7); }
+
+@media screen and (max-width: 768px) { /* line 98, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_footer.scss */ .block-footer { -ms-flex-wrap: nowrap; flex-wrap: nowrap; }
+		/* line 101, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_footer.scss */ .block-footer__item { width: calc(100% / 2 - 20px); }
+		/* line 105, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_footer.scss */ #block-footer__item2 { display: none; } }
+
+@media screen and (max-width: 576px) { /* line 110, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_footer.scss */ .block-footer { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
+		/* line 114, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_footer.scss */ .block-footer__item { width: 100%; }
+		/* line 118, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_footer.scss */ .block-footer__phone { position: relative; top: -150px; }
+		/* line 123, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_footer.scss */ .block-footer__text-info { position: relative; top: 230px; }
+		/* line 128, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_footer.scss */ .block-footer_transp, .block-footer__online-application { position: relative; top: -190px; } }
 /*# sourceMappingURL=style.css.map */
