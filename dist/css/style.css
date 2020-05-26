@@ -113,7 +113,13 @@
 
 /* line 360, ../../../../Documents/GitHub/Avangard/#src/scss/_normalize.scss */ * { -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-/* line 363, ../../../../Documents/GitHub/Avangard/#src/scss/_normalize.scss */ body, html, * { -webkit-transition: all easy 1s; -o-transition: all easy 1s; transition: all easy 1s; }
+/* line 364, ../../../../Documents/GitHub/Avangard/#src/scss/_normalize.scss */ * { -webkit-transition: 0.5s background; -o-transition: 0.5s background; transition: 0.5s background; }
+
+@-webkit-keyframes scale { 0% { -webkit-transform: scale(0); transform: scale(0); }
+		100% { -webkit-transform: scale(1); transform: scale(1); } }
+
+@keyframes scale { 0% { -webkit-transform: scale(0); transform: scale(0); }
+		100% { -webkit-transform: scale(1); transform: scale(1); } }
 
 /* line 1, ../../../../Documents/GitHub/Avangard/#src/scss/_layout.scss */ .container { width: 1170px; margin: 0 auto; }
 
@@ -127,22 +133,22 @@
 
 /* line 1, ../../../../Documents/GitHub/Avangard/#src/scss/_typography.scss */ * { font-family: Montserrat; font-style: normal; font-weight: normal; font-size: calc(10px + 6 * (100vw / 1360)); line-height: 20px; letter-spacing: 0.04em; }
 
-/* line 9, ../../../../Documents/GitHub/Avangard/#src/scss/_typography.scss */ h1 { font-family: Montserrat; font-style: normal; font-weight: bold; font-size: calc(36px + 12 * (100vw / 1360)); line-height: 56px; letter-spacing: 0.04em; }
+/* line 9, ../../../../Documents/GitHub/Avangard/#src/scss/_typography.scss */ h1 { font-family: Montserrat; font-style: normal; font-weight: bold; font-size: calc(30px + 18 * (100vw / 1360)); line-height: 1.3em; letter-spacing: 0.04em; }
 
-/* line 17, ../../../../Documents/GitHub/Avangard/#src/scss/_typography.scss */ h2 { font-family: Montserrat; font-style: normal; font-weight: bold; font-size: calc(20px + 16 * (100vw / 1360)); line-height: 44px; letter-spacing: 0.02em; opacity: 0.9; }
+/* line 17, ../../../../Documents/GitHub/Avangard/#src/scss/_typography.scss */ h2 { font-family: Montserrat; font-style: normal; font-weight: bold; font-size: calc(20px + 16 * (100vw / 1360)); line-height: 1.2em; letter-spacing: 0.02em; opacity: 0.9; }
 
-/* line 26, ../../../../Documents/GitHub/Avangard/#src/scss/_typography.scss */ h3 { font-family: Montserrat; font-style: normal; font-weight: 600; font-size: calc(20px + 10 * (100vw / 1360)); line-height: 37px; letter-spacing: 0.04em; }
+/* line 26, ../../../../Documents/GitHub/Avangard/#src/scss/_typography.scss */ h3 { font-family: Montserrat; font-style: normal; font-weight: 600; font-size: calc(20px + 10 * (100vw / 1360)); line-height: 1.2em; letter-spacing: 0.04em; }
 
-/* line 34, ../../../../Documents/GitHub/Avangard/#src/scss/_typography.scss */ h4 { font-family: Montserrat; font-style: normal; font-weight: 600; font-size: calc(16px + 8 * (100vw / 1360)); line-height: 29px; letter-spacing: 0.08em; }
+/* line 34, ../../../../Documents/GitHub/Avangard/#src/scss/_typography.scss */ h4 { font-family: Montserrat; font-style: normal; font-weight: 600; font-size: calc(16px + 8 * (100vw / 1360)); line-height: 1.2em; letter-spacing: 0.08em; }
 
-/* line 42, ../../../../Documents/GitHub/Avangard/#src/scss/_typography.scss */ h5 { font-family: Montserrat; font-style: normal; font-weight: 600; font-size: calc(12px + 6 * (100vw / 1360)); line-height: 22px; letter-spacing: 0.02em; }
+/* line 42, ../../../../Documents/GitHub/Avangard/#src/scss/_typography.scss */ h5 { font-family: Montserrat; font-style: normal; font-weight: 600; font-size: calc(12px + 6 * (100vw / 1360)); line-height: 1.2em; letter-spacing: 0.02em; }
 
-@media screen and (min-width: 1260px) { /* line 52, ../../../../Documents/GitHub/Avangard/#src/scss/_typography.scss */ * { font-family: Montserrat; font-style: normal; font-weight: normal; font-size: 16px; line-height: 20px; letter-spacing: 0.04em; }
-		/* line 60, ../../../../Documents/GitHub/Avangard/#src/scss/_typography.scss */ h1 { font-family: Montserrat; font-style: normal; font-weight: bold; font-size: 48px; line-height: 56px; letter-spacing: 0.04em; }
-		/* line 68, ../../../../Documents/GitHub/Avangard/#src/scss/_typography.scss */ h2 { font-family: Montserrat; font-style: normal; font-weight: bold; font-size: 36px; line-height: 44px; letter-spacing: 0.02em; opacity: 0.9; }
-		/* line 77, ../../../../Documents/GitHub/Avangard/#src/scss/_typography.scss */ h3 { font-family: Montserrat; font-style: normal; font-weight: 600; font-size: 30px; line-height: 37px; letter-spacing: 0.04em; }
-		/* line 85, ../../../../Documents/GitHub/Avangard/#src/scss/_typography.scss */ h4 { font-family: Montserrat; font-style: normal; font-weight: 600; font-size: 24px; line-height: 29px; letter-spacing: 0.08em; }
-		/* line 93, ../../../../Documents/GitHub/Avangard/#src/scss/_typography.scss */ h5 { font-family: Montserrat; font-style: normal; font-weight: 600; font-size: 18px; line-height: 22px; letter-spacing: 0.02em; } }
+@media screen and (min-width: 1260px) { /* line 52, ../../../../Documents/GitHub/Avangard/#src/scss/_typography.scss */ * { font-size: 16px; }
+		/* line 55, ../../../../Documents/GitHub/Avangard/#src/scss/_typography.scss */ h1 { font-size: 48px; }
+		/* line 58, ../../../../Documents/GitHub/Avangard/#src/scss/_typography.scss */ h2 { font-size: 36px; }
+		/* line 61, ../../../../Documents/GitHub/Avangard/#src/scss/_typography.scss */ h3 { font-size: 30px; }
+		/* line 64, ../../../../Documents/GitHub/Avangard/#src/scss/_typography.scss */ h4 { font-size: 24px; }
+		/* line 67, ../../../../Documents/GitHub/Avangard/#src/scss/_typography.scss */ h5 { font-size: 18px; } }
 
 /* line 2, ../../../../Documents/GitHub/Avangard/#src/scss/_elements.scss */ .logo { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
@@ -152,27 +158,31 @@
 
 /* line 14, ../../../../Documents/GitHub/Avangard/#src/scss/_elements.scss */ .logo__subtitle { font-size: 14px; }
 
-/* line 19, ../../../../Documents/GitHub/Avangard/#src/scss/_elements.scss */ .btn { border-radius: 100px; text-align: center; border: 0; }
+/* line 19, ../../../../Documents/GitHub/Avangard/#src/scss/_elements.scss */ .btn { border-radius: 100px; text-align: center; border: 0; cursor: pointer; -webkit-transition: 0.5 all; -o-transition: 0.5 all; transition: 0.5 all; }
 
-/* line 24, ../../../../Documents/GitHub/Avangard/#src/scss/_elements.scss */ .btn_red { background: #f93838; -webkit-box-shadow: 4px 8px 20px rgba(9, 75, 160, 0.4); box-shadow: 4px 8px 20px rgba(9, 75, 160, 0.4); color: #fff; letter-spacing: 0.08em; font-weight: 900; font-size: 14px; text-transform: uppercase; }
+/* line 26, ../../../../Documents/GitHub/Avangard/#src/scss/_elements.scss */ .btn_red { background: #f93838; -webkit-box-shadow: 4px 8px 20px rgba(9, 75, 160, 0.4); box-shadow: 4px 8px 20px rgba(9, 75, 160, 0.4); color: #fff; letter-spacing: 0.08em; font-weight: 900; font-size: 14px; text-transform: uppercase; }
 
-/* line 34, ../../../../Documents/GitHub/Avangard/#src/scss/_elements.scss */ .btn_transp { border: 1px solid #f93838; }
+/* line 34, ../../../../Documents/GitHub/Avangard/#src/scss/_elements.scss */ .btn_red:hover { background: #f56c6c; }
 
-/* line 38, ../../../../Documents/GitHub/Avangard/#src/scss/_elements.scss */ .btn_big { height: 78px; line-height: 78px; }
+/* line 39, ../../../../Documents/GitHub/Avangard/#src/scss/_elements.scss */ .btn_transp { border: 1px solid #f93838; }
 
-/* line 43, ../../../../Documents/GitHub/Avangard/#src/scss/_elements.scss */ .btn_small { height: 47px; line-height: 47px; }
+/* line 41, ../../../../Documents/GitHub/Avangard/#src/scss/_elements.scss */ .btn_transp:hover { background: #f93838; color: #fff; }
 
-/* line 50, ../../../../Documents/GitHub/Avangard/#src/scss/_elements.scss */ .block-title { text-align: center; margin: 117px auto 0 auto; }
+/* line 47, ../../../../Documents/GitHub/Avangard/#src/scss/_elements.scss */ .btn_big { height: 78px; line-height: 78px; }
 
-/* line 54, ../../../../Documents/GitHub/Avangard/#src/scss/_elements.scss */ .block-title__title { opacity: 0.7; text-transform: uppercase; }
+/* line 52, ../../../../Documents/GitHub/Avangard/#src/scss/_elements.scss */ .btn_small { height: 47px; line-height: 47px; }
 
-/* line 58, ../../../../Documents/GitHub/Avangard/#src/scss/_elements.scss */ .block-title__sub-title { font-weight: 800; margin-top: -20px; }
+/* line 59, ../../../../Documents/GitHub/Avangard/#src/scss/_elements.scss */ .block-title { text-align: center; margin: 117px auto 0 auto; }
 
-/* line 62, ../../../../Documents/GitHub/Avangard/#src/scss/_elements.scss */ .block-title_white { color: #ffffff; }
+/* line 63, ../../../../Documents/GitHub/Avangard/#src/scss/_elements.scss */ .block-title__title { opacity: 0.7; text-transform: uppercase; }
 
-@media screen and (max-width: 576px) { /* line 67, ../../../../Documents/GitHub/Avangard/#src/scss/_elements.scss */ .hidden__callback { display: none; }
-		/* line 71, ../../../../Documents/GitHub/Avangard/#src/scss/_elements.scss */ .block-title { margin: 58px auto 0 auto; }
-		/* line 75, ../../../../Documents/GitHub/Avangard/#src/scss/_elements.scss */ .btn_big { height: 60px; line-height: 60px; } }
+/* line 67, ../../../../Documents/GitHub/Avangard/#src/scss/_elements.scss */ .block-title__sub-title { font-weight: 800; margin-top: -20px; }
+
+/* line 71, ../../../../Documents/GitHub/Avangard/#src/scss/_elements.scss */ .block-title_white { color: #ffffff; }
+
+@media screen and (max-width: 576px) { /* line 76, ../../../../Documents/GitHub/Avangard/#src/scss/_elements.scss */ .hidden__callback { display: none; }
+		/* line 80, ../../../../Documents/GitHub/Avangard/#src/scss/_elements.scss */ .block-title { margin: 58px auto 0 auto; }
+		/* line 84, ../../../../Documents/GitHub/Avangard/#src/scss/_elements.scss */ .btn_big { height: 60px; line-height: 60px; } }
 
 /* line 1, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_navigation.scss */ .navigation { background-color: #fff; position: fixed; top: 0; width: 100%; z-index: 5; -webkit-box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1); box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1); }
 
@@ -182,44 +192,46 @@
 
 /* line 21, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_navigation.scss */ .phone { margin-left: auto; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; margin-right: 15px; }
 
-/* line 27, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_navigation.scss */ .phone__icon { margin-right: 10px; margin-top: 3px; }
+/* line 27, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_navigation.scss */ .phone__icon { margin-right: 10px; margin-top: 3px; fill: green; }
 
-/* line 31, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_navigation.scss */ .phone__number { font-size: 14px; }
+/* line 32, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_navigation.scss */ .phone__number { font-size: 14px; }
 
-/* line 36, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_navigation.scss */ .callback { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; width: 300px; padding: 0 20px; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+/* line 37, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_navigation.scss */ .callback { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; width: 300px; color: #f93838; padding: 0 20px; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-transition: 0.5 all; -o-transition: 0.5 all; transition: 0.5 all; }
 
-/* line 44, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_navigation.scss */ .callback__icon { margin-right: 10px; }
+/* line 47, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_navigation.scss */ .callback__icon { margin-right: 10px; }
 
-/* line 47, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_navigation.scss */ .callback__text { font-size: 14px; color: #f93838; }
+/* line 50, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_navigation.scss */ .callback * { font-size: 14px; }
 
-/* line 53, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_navigation.scss */ .block-menu { background-color: #1663c7; padding: 15px 0; }
+/* line 53, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_navigation.scss */ .callback:hover { color: #fff; }
 
-/* line 57, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_navigation.scss */ .menu { padding: 3px 0; }
+/* line 58, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_navigation.scss */ .block-menu { background-color: #1663c7; padding: 15px 0; }
 
-/* line 59, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_navigation.scss */ .menu .phone-menu { display: none; }
+/* line 62, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_navigation.scss */ .menu { padding: 3px 0; }
 
-/* line 62, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_navigation.scss */ .menu .btn-menu { width: 30px; height: 24px; display: none; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; cursor: pointer; }
+/* line 64, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_navigation.scss */ .menu .phone-menu { display: none; }
 
-/* line 69, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_navigation.scss */ .menu .btn-menu__item { width: 100%; height: 3px; background-color: #fff; }
+/* line 67, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_navigation.scss */ .menu .btn-menu { width: 30px; height: 24px; display: none; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; cursor: pointer; }
 
-/* line 75, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_navigation.scss */ .menu__humburgers { display: none; }
+/* line 74, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_navigation.scss */ .menu .btn-menu__item { width: 100%; height: 3px; background-color: #fff; }
 
-/* line 79, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_navigation.scss */ .menu__links { list-style-type: none; margin: 0; padding: 0; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+/* line 80, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_navigation.scss */ .menu__humburgers { display: none; }
 
-/* line 88, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_navigation.scss */ .menu__link a { color: #fff; text-decoration: none; font-size: 12px; text-transform: uppercase; }
+/* line 84, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_navigation.scss */ .menu__links { list-style-type: none; margin: 0; padding: 0; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
 
-/* line 93, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_navigation.scss */ .menu__link a:hover { text-decoration: underline; }
+/* line 93, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_navigation.scss */ .menu__link a { color: #fff; text-decoration: none; font-size: 12px; text-transform: uppercase; }
 
-@media screen and (max-width: 992px) { /* line 101, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_navigation.scss */ .menu { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
-		/* line 107, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_navigation.scss */ .menu .phone-menu { display: block; color: #fff; }
-		/* line 110, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_navigation.scss */ .menu .phone-menu__number { font-size: 14px; }
-		/* line 114, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_navigation.scss */ .menu .btn-menu { display: -webkit-box; display: -ms-flexbox; display: flex; }
-		/* line 117, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_navigation.scss */ .menu__humburgers:checked + .menu__links { max-height: 100vh; }
-		/* line 120, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_navigation.scss */ .menu__links { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; width: 100%; max-height: 0; overflow: hidden; -webkit-transition: 0.5s all; -o-transition: 0.5s all; transition: 0.5s all; }
-		/* line 127, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_navigation.scss */ .menu__link { width: 100%; margin-top: 30px; }
-		/* line 133, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_navigation.scss */ .navigation .phone { display: none; } }
+/* line 98, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_navigation.scss */ .menu__link a:hover { text-decoration: underline; }
 
-@media screen and (max-width: 576px) { /* line 139, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_navigation.scss */ .callback { width: 200px; min-width: 200px; } }
+@media screen and (max-width: 992px) { /* line 106, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_navigation.scss */ .menu { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+		/* line 112, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_navigation.scss */ .menu .phone-menu { display: block; color: #fff; }
+		/* line 115, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_navigation.scss */ .menu .phone-menu__number { font-size: 14px; }
+		/* line 119, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_navigation.scss */ .menu .btn-menu { display: -webkit-box; display: -ms-flexbox; display: flex; }
+		/* line 122, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_navigation.scss */ .menu__humburgers:checked + .menu__links { max-height: 100vh; }
+		/* line 125, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_navigation.scss */ .menu__links { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; width: 100%; max-height: 0; overflow: hidden; -webkit-transition: 0.5s all; -o-transition: 0.5s all; transition: 0.5s all; }
+		/* line 132, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_navigation.scss */ .menu__link { width: 100%; margin-top: 30px; }
+		/* line 138, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_navigation.scss */ .navigation .phone { display: none; } }
+
+@media screen and (max-width: 576px) { /* line 144, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_navigation.scss */ .callback { width: 200px; min-width: 200px; } }
 
 /* line 1, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_header.scss */ body { padding-top: 134px; overflow-x: hidden; scroll-behavior: smooth; }
 
@@ -428,4 +440,16 @@
 		/* line 118, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_footer.scss */ .block-footer__phone { position: relative; top: -150px; }
 		/* line 123, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_footer.scss */ .block-footer__text-info { position: relative; top: 230px; }
 		/* line 128, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_footer.scss */ .block-footer_transp, .block-footer__online-application { position: relative; top: -190px; } }
+
+/* line 1, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_popup.scss */ .popup-form { background-color: #035fd7d2; display: none; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; height: 100vh; width: 100%; top: 0; left: 0; position: fixed; z-index: 10; }
+
+/* line 13, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_popup.scss */ .popup-form_hidden { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-animation: scale 0.5s ease-in-out; animation: scale 0.5s ease-in-out; }
+
+/* line 22, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_popup.scss */ .close-form { width: 30px; height: 30px; cursor: pointer; margin-left: auto; }
+
+/* line 27, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_popup.scss */ .close-form__item { height: 4px; width: 100%; display: block; background-color: #fff; }
+
+/* line 33, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_popup.scss */ .close-form #item1 { -webkit-transform: translatey(50%) rotate(45deg); -ms-transform: translatey(50%) rotate(45deg); transform: translatey(50%) rotate(45deg); }
+
+/* line 36, ../../../../Documents/GitHub/Avangard/#src/scss/blocks/_popup.scss */ .close-form #item2 { -webkit-transform: translatey(-50%) rotate(-45deg); -ms-transform: translatey(-50%) rotate(-45deg); transform: translatey(-50%) rotate(-45deg); }
 /*# sourceMappingURL=style.css.map */
