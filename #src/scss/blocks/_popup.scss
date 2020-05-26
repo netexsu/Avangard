@@ -1,0 +1,39 @@
+.popup-form {
+  background-color: $colorBlue2;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 10;
+
+  &_hidden {
+    display: flex;
+    animation: scale 0.5s ease-in-out;
+  }
+  // &_animation {
+  //   animation: scale 2s ease-in-out;
+  // }
+}
+// Кнопка закрыте попапа
+.close-form {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  margin-left: auto;
+  &__item {
+    height: 4px;
+    width: 100%;
+    display: block;
+    background-color: #fff;
+  }
+  & #item1 {
+    transform: translatey(50%) rotate(45deg);
+  }
+  & #item2 {
+    transform: translatey(-50%) rotate(-45deg);
+  }
+}
