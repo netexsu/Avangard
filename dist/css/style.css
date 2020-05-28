@@ -1083,7 +1083,7 @@ body {
   color: #fff;
 }
 
-.block-footer__text-info {
+.block-footer__text-info p {
   color: rgba(255, 255, 255, 0.4);
   font-size: 12px;
   margin-top: 17px;
@@ -1091,13 +1091,11 @@ body {
 
 .block-footer__text-ogrn {
   color: rgba(255, 255, 255, 0.4);
-  font-size: 12px;
   margin-top: 26px;
 }
 
 .block-footer__text-copyright {
   color: rgba(255, 255, 255, 0.4);
-  font-size: 12px;
   line-height: 16px;
   margin-top: 10px;
 }
@@ -1441,6 +1439,11 @@ body {
   .callback {
     width: 200px;
     min-width: 200px;
+  }
+
+  .navigation .block-contact .wrapper {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
   }
 
   .header-blocks__text {
