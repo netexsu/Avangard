@@ -9,7 +9,9 @@
   left: 0;
   position: fixed;
   z-index: 10;
-
+  & .container {
+    position: relative;
+  }
   &_hidden {
     display: flex;
     animation: scale 0.5s ease-in-out;
@@ -23,7 +25,9 @@
   width: 30px;
   height: 30px;
   cursor: pointer;
-  margin-left: auto;
+  position: absolute;
+  top: 70px;
+  right: 20%;
   &__item {
     height: 4px;
     width: 100%;
@@ -35,5 +39,22 @@
   }
   & #item2 {
     transform: translatey(-50%) rotate(-45deg);
+  }
+}
+
+@media screen and (max-width: $Large) {
+  .close-form {
+    top: 50px;
+    right: 0%;
+  }
+}
+@media screen and (max-width: $Medium) {
+  .close-form {
+    top: 50px;
+  }
+}
+@media screen and (max-width: $Small) {
+  .close-form {
+    top: 15px;
   }
 }

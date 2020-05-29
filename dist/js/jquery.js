@@ -7,4 +7,9 @@ $(document).ready(function () {
       return false;
     });
   });
+  // Гамбургер меню
+  var btnMenu = $(".btn-menu");
+  btnMenu.click(function () {
+    btnMenu.toggleClass("btn-menu_active");
+  });
 });

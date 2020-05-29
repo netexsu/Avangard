@@ -41,6 +41,21 @@
       transform: translatey(-50%);
     }
   }
+  &__block_active {
+    &::after {
+      content: "";
+      background: url("/dist/img/qa__up.svg");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: contain;
+      width: 38px;
+      height: 38px;
+      position: absolute;
+      right: 25px;
+      top: 50%;
+      transform: translatey(-50%);
+    }
+  }
   &__content {
     padding: 0 100px;
     max-height: 0;
@@ -65,12 +80,10 @@
   }
 }
 
-
 @media screen and (max-width: $Small) {
   .block-qa {
     margin: 40px auto 0;
   }
-
 
   .accordeon__block {
     padding: 0 60px;
