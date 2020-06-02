@@ -1,5 +1,5 @@
 body {
-  padding-top: 134px;
+  // padding-top: 134px;
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
@@ -50,8 +50,7 @@ body {
 }
 
 @media screen and (max-width: $Small) {
-  
-.header-blocks__text {
+  .header-blocks__text {
     margin-top: 58px;
     margin-bottom: 58px;
   }

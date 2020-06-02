@@ -1,6 +1,5 @@
 .navigation {
   background-color: #fff;
-  position: fixed;
   top: 0;
   width: 100%;
   z-index: 5;
@@ -53,6 +52,14 @@
   &:hover {
     color: #fff;
   }
+}
+.fixed {
+	position: fixed;
+	top: 0; 
+	width: 100%;
+	z-index: 20;
+	opacity: .9;
+
 }
 // меню
 .block-menu {

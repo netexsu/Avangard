@@ -1,5 +1,6 @@
 // Скрипт плавной прокрутки
 $(document).ready(function () {
+  // ПЛавная прокрутка
   $(function () {
     $("a[href^='#']").click(function () {
       var _href = $(this).attr("href");
@@ -11,5 +12,25 @@ $(document).ready(function () {
   var btnMenu = $(".btn-menu");
   btnMenu.click(function () {
     btnMenu.toggleClass("btn-menu_active");
+  });
+  // Отправка почты
+  $(document).ready(function () {
+    //E-mail Ajax Send
+    $("form").submit(function () {
+      //Change
+      var th = $(this);
+      $.ajax({
+        type: "POST",
+        url: "mail.php", //Change
+        data: th.serialize(),
+      }).done(function () {
+        alert("Thank you!");
+        setTimeout(function () {
+          // Done Functions
+          th.trigger("reset");
+        }, 1000);
+      });
+      return false;
+    });
   });
 });

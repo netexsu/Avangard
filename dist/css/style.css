@@ -549,7 +549,6 @@ h5 {
 
 .navigation {
   background-color: #fff;
-  position: fixed;
   top: 0;
   width: 100%;
   z-index: 5;
@@ -628,6 +627,14 @@ h5 {
   color: #fff;
 }
 
+.fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 20;
+  opacity: .9;
+}
+
 .block-menu {
   background-color: #1663c7;
   padding: 15px 0;
@@ -671,7 +678,6 @@ h5 {
 }
 
 body {
-  padding-top: 134px;
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
@@ -1236,6 +1242,7 @@ body {
   left: 0;
   position: fixed;
   z-index: 10;
+  overflow: auto;
 }
 
 .popup-form .container {
